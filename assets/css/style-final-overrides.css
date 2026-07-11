@@ -1,0 +1,1450 @@
+/*@media (max-width: 600px) {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .container-custom,
+  .sb-main-layout-container,
+  .sb-wc-main-container,
+  .sb-news-section,
+  .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-wc-main-container {
+    background: #0d2b66 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+
+  .sb-wc-divider,
+  .sb-wc-divider a,
+  .sb-wc-divider img {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .wc-ticker-container {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    overflow: visible !important;
+  }
+
+  .wc-slider-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 0 12px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+  }
+
+  .wc-match-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 14px !important;
+    background: #ffffff !important;
+    border-radius: 18px !important;
+    border: 1px solid rgba(16, 24, 40, 0.08) !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+  }
+
+  .wc-match-card + .wc-match-card {
+    margin-top: 10px !important;
+  }
+
+  .wc-team-info {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 80px !important;
+    min-width: 80px !important;
+    text-align: center !important;
+    gap: 6px !important;
+    padding: 0 !important;
+  }
+
+  .wc-team-info .flag {
+    width: 34px !important;
+    height: auto !important;
+    border-radius: 2px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .wc-team-info .wc-team-name {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+    line-height: 1.2 !important;
+  }
+
+  .wc-match-status {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    min-width: 88px !important;
+  }
+
+  .wc-score {
+    font-size: 28px !important;
+    font-weight: 900 !important;
+    color: #0b254b !important;
+    margin: 0 !important;
+    background: #f3f5f9 !important;
+    padding: 4px 16px !important;
+    border-radius: 999px !important;
+    letter-spacing: 0.5px !important;
+    display: inline-block !important;
+  }
+
+  .wc-status-badge {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #0b254b !important;
+    background: rgba(11, 18, 40, 0.08) !important;
+    padding: 4px 10px !important;
+    border-radius: 12px !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+
+  .wc-status-badge::after {
+    content: none !important;
+  }
+}
+
+/* Final enforcement: highest-specificity override to ensure correct mobile top spacing 
+@media (max-width: 600px) {
+  html body main.sb-main-layout-container { padding-top: 20px !important; }
+}
+
+/* Last-resort override: ensure mobile main padding equals header height (56px) 
+@media (max-width: 600px) {
+  main.sb-main-layout-container { padding-top: 20px !important; }
+}
+
+/* Tighten main top padding on mobile to match fixed header height 
+@media (max-width: 600px) {
+  main.sb-main-layout-container { padding-top: 20px !important; }
+}
+
+/* Strong final layout override for the first blue FIFA module on mobile 
+@media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .sb-mobile-header-row {
+    position: fixed !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    z-index: 1100 !important;
+    background: #ffffff !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-main-layout-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100vw !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 18px 0 20px 0 !important;
+    background: #0d2b66 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-divider,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-row,
+  .sb-main-layout-container > .sb-wc-main-container .wc-ticker-container {
+    padding: 0 16px !important;
+    width: 100% !important;
+    max-width: calc(100% - 32px) !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-main-title,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-summary,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-text,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-text-side,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-divider,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-img-wrap,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-img-wrap {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-row {
+    padding: 0 !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-text,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-text-side {
+    padding: 0 !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-main-title {
+    font-size: 26px !important;
+    line-height: 32px !important;
+    margin: 0 0 8px !important;
+    color: #ffffff !important;
+    max-width: calc(100% - 32px) !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-summary {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin: 0 0 14px !important;
+    color: rgba(255,255,255,0.95) !important;
+    max-width: calc(100% - 32px) !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-divider img,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-img,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-img-wrap img,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-img-wrap img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 12px !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-img-wrap,
+  .sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-img-wrap {
+    background: transparent !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* 1. The Main Outer Wrapper - Now holds the white background and outer spacing 
+.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container {
+    width: 100% !important;
+    max-width: calc(100% - 32px) !important;
+    margin: 16px auto !important;
+    padding: 16px 8px !important;
+    background: #ffffff !important; /* Forces the main area white 
+    border-radius: 4px !important;   /* Matches the square-ish look of Image 2 
+    box-sizing: border-box !important;
+}
+
+/* 2. Nuclear Option: Strip backgrounds, shadows, and curves from EVERYTHING inside 
+.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container ** {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* 3. Re-allow the central score/date badges to keep their subtle light grey/blue backgrounds 
+.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container span,
+.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container div[class*="date"],
+.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container div[class*="score"] {
+    background: inherit; /* Prevents breaking the inner date/score badges 
+}
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-slider-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-match-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: #ffffff !important;
+    border-radius: 18px !important;
+    padding: 12px 14px !important;
+    box-shadow: none !important;
+    display: grid !important;
+    grid-template-columns: 44px auto 44px !important;
+    align-items: center !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-match-card + .wc-match-card {
+    margin-top: 10px !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-team-info {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-team-info .flag {
+    width: 30px !important;
+    height: auto !important;
+    border-radius: 4px !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-team-name {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-match-status {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    min-width: auto !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-score {
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    color: #0b254b !important;
+    background: #eef2ff !important;
+    padding: 10px 14px !important;
+    border-radius: 999px !important;
+    text-align: center !important;
+    min-width: 48px !important;
+  }
+
+  .sb-main-layout-container > .sb-wc-main-container .wc-status-badge {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #0b254b !important;
+    background: rgba(11, 18, 40, 0.08) !important;
+    padding: 5px 10px !important;
+    border-radius: 999px !important;
+    display: inline-block !important;
+  }
+}
+
+/* Ultimate final mobile override 
+@media (max-width: 600px) {
+  html, body, .container-custom, main.sb-main-layout-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-mobile-header-row {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    margin: 0 !important;
+    padding: 10px 14px !important;
+    background: #ffffff !important;
+    box-sizing: border-box !important;
+    z-index: 1300 !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  main.sb-main-layout-container {
+    padding-top: 72px !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container {
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 14px 0 20px !important;
+    box-sizing: border-box !important;
+    background: #0d2b66 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-divider,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-divider a,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-divider img,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-row,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-box,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-grid,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-item,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-text,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-img-wrap,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-img-wrap img,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-img-wrap,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-img-wrap img {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-col-6,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 0 12px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-item {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-img-wrap {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-main-title,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-summary {
+    padding: 0 16px !important;
+    margin: 0 0 12px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-main-title {
+    font-size: 26px !important;
+    line-height: 32px !important;
+    color: #ffffff !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-summary {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container {
+    padding: 0 16px 18px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    background: transparent !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .wc-slider-inner {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .wc-match-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 10px 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Reduce gap between navbar and Walton ad, and add horizontal padding to ad */
+/* Applies globally; mobile rules further refined below 
+.sb-header-wrapper {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+main.sb-main-layout-container {
+  margin-top: 8px !important;
+}
+
+.sb-ad-billboard-wrapper {
+  padding: 4px 14px !important;
+  box-sizing: border-box !important;
+}
+
+.sb-ad-billboard-wrapper .sb-ad-banner-img,
+.sb-ad-billboard-wrapper img {
+  width: 100% !important;
+  max-width: 970px !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+@media (max-width: 600px) {
+  /* slightly tighter on small screens 
+  main.sb-main-layout-container { margin-top: 6px !important; }
+  .sb-ad-billboard-wrapper { padding-left: 12px !important; padding-right: 12px !important; }
+}
+
+/* Final override layer to lock mobile blue module and sticky header 
+@media (max-width: 600px) {
+  html, body, main.sb-main-layout-container, .container-custom {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-mobile-header-row {
+    position: fixed !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+    z-index: 1100 !important;
+    background: #ffffff !important;
+  }
+
+  main.sb-main-layout-container {
+    padding-top: 64px !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 18px 0 20px 0 !important;
+    box-sizing: border-box !important;
+    background: #0d2b66 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-divider,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-row,
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container {
+    width: 100% !important;
+    max-width: calc(100vw - 32px) !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-box,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-row,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-text,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-feed-text-side {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-main-title,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-summary {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Nudge mobile logo slightly to the right without shifting layout 
+@media (max-width: 600px) {
+  .sb-mobile-header-logo { padding-left: 10px !important; }
+  .sb-mobile-header-logo img { margin-left: 6px !important; transform: none !important; }
+}
+
+/* Reduce inner container padding, align image/title/text, and reduce main title size on mobile 
+@media (max-width: 600px) {
+  main.sb-main-layout-container > .sb-wc-main-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-divider,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-row,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-box,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-text {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    box-sizing: border-box !important;
+    max-width: calc(100% - 12px) !important;
+  }
+
+  /* Make image block-aligned and flush 
+  .sb-wc-img, .sb-wc-lead-img-wrap img, .sb-wc-divider img, .sb-wc-feed-img-wrap img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Align title and text to left and reduce main title size 
+  .sb-wc-main-title, .sb-wc-lead-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin: 0 0 8px 0 !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-wc-summary, .sb-wc-feed-title {
+    padding: 0 !important;
+    margin: 0 0 10px 0 !important;
+    text-align: left !important;
+  }
+
+  /* Ensure lead box stacks cleanly and items align 
+  .sb-wc-lead-box { display: flex !important; flex-direction: column !important; gap: 10px !important; align-items: stretch !important; }
+  .sb-wc-lead-text { order: 1 !important; }
+  .sb-wc-lead-img-wrap { order: 2 !important; }
+}
+/* =======================================================
+     FIX FOR WIDGET TICKER: Merges separate cards into one 
+     ======================================================= 
+  
+ @media (max-width: 600px) {
+  /* 1. Main Container: Edge-to-edge, removed side padding, added bottom gap 
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container {
+    width: 100% !important;
+    max-width: 100% !important; 
+    margin: 16px 0 40px 0 !important; /* 40px bottom gap added here 
+    padding: 0 !important;
+    background: #ffffff !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 2. Individual Rows: Resetting backgrounds and removing border artifacts 
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container > * {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f0f0f0 !important; /* Keep light separator 
+  }
+
+  /* 3. Score/Date Boxes: Removes border lines and the "blue part" background 
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container [class*="score"],
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container [class*="date"],
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container div[style*="background"] {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: inherit !important; /* Ensures text stays visible 
+  }
+
+  /* Remove border from the last row 
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container > *:last-child {
+    border-bottom: none !important;
+  }
+}
+*/
+
+@media (max-width: 600px) {
+  /* =======================================================
+     1. CORRECTED MOBILE RESET & STRUCTURAL LAYOUT
+     ======================================================= */
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Structural wrappers forced full width without shifts */
+  .container-custom,
+  .sb-main-layout-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container {
+    padding-top: 30px !important; /* Space for the top navigation bar */
+    display: block !important;
+  }
+
+  /* Fixes the squished right alignment of the blue module box */
+  main.sb-main-layout-container > .sb-wc-main-container {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    margin: 0 auto !important;
+    padding: 16px 14px 30px 14px !important; /* Clean side gutters */
+    background: #0d2b66 !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    display: block !important;
+  }
+
+ @media (max-width: 600px) {
+  /* =======================================================
+     SCOREBOARD BOX STRUCTURAL FRAME (MATCHES IMAGE 2)
+     ======================================================= */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-ticker-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: #f4f6fa !important; /* Soft white/light-gray background fill */
+    border-radius: 0 !important;      /* Removes independent card borders */
+    padding: 10px 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  main.sb-main-layout-container > .sb-wc-main-container .wc-slider-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important; /* Clean vertical spacing between matches */
+    padding: 16px 0 !important;
+  }
+
+  /* Strips individual card backgrounds to make the widget seamless */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-match-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 120px 1fr !important; /* Strict spacing constraints */
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* =======================================================
+     CENTER MODULE: CORRECTED STACKED DATE & SCORE LAYER
+     ======================================================= */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-match-status {
+    display: flex !important;
+    flex-direction: column !important; /* Stack top-to-bottom */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;               /* Creates physical space between elements */
+    width: 100% !important;
+    height: auto !important;           /* Unlocks restrictive container heights causing overlaps */
+    position: relative !important;
+    top: auto !important;
+    transform: none !important;
+  }
+
+  /* Light gray pill container for the match date */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-status-badge {
+    position: relative !important;     /* Neutralizes rogue absolute position overlays */
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    background-color: #e2e8f0 !important; 
+    color: #4a5568 !important;            
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    padding: 4px 12px !important;
+    border-radius: 12px !important;
+    white-space: nowrap !important;
+    display: block !important;
+    margin: 0 auto !important;
+    order: 1 !important;               /* Forces date badge to stay on top */
+  }
+
+  /* Prominent dark score numbers */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-score {
+    position: relative !important;     /* Breaks it away from absolute background layers */
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    color: #1a202c !important;
+    font-family: Arial, sans-serif !important;
+    line-height: 1 !important;       /* Gives numbers vertical breathing space */
+    margin: 0 auto !important;
+    text-align: center !important;
+    display: block !important;
+    order: 2 !important;               /* Forces numbers directly beneath the date badge */
+    height: auto !important;
+    width: auto !important;
+  }
+
+  /* =======================================================
+     SIDE MODULES: STACKED TEAM CRESTS & NAMES (VERTICAL)
+     ======================================================= */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-team-info {
+    display: flex !important;
+    flex-direction: column !important; /* Forces flag to sit cleanly on top of text */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+
+  /* Force left and right team structural configurations to behave identically */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-team-info:first-child,
+  main.sb-main-layout-container > .sb-wc-main-container .wc-team-info:last-child {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Team Flag Sizing */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-team-info .flag,
+  main.sb-main-layout-container > .sb-wc-main-container .wc-team-info img {
+    width: 32px !important;
+    height: 22px !important;
+    object-fit: cover !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 2px !important;
+    margin: 0 !important;
+  }
+
+  /* Team Label Styling */
+  main.sb-main-layout-container > .sb-wc-main-container .wc-team-name {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #2d3748 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+}
+
+ @media (max-width: 600px) {
+  /* Keep your layout containers structurally untouched */
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+     padding-left: 04px !important;  /* Adjust this number to shift more or less to the right */
+    box-sizing: border-box !important;
+  }
+
+  /* Target ONLY the titles and body text blocks to shift them right */
+  .sb-wc-main-title, 
+  .sb-wc-lead-title, 
+  .sb-wc-summary,
+  main.sb-main-layout-container > .sb-wc-main-container .sb-wc-lead-text {
+    padding-left: 04px !important;  /* Adjust this number to shift more or less to the right */
+    padding-right: 16px !important; /* Balanced padding on the right side */
+    box-sizing: border-box !important;
+  }
+}
+}
+
+@media (max-width: 600px) {
+  /* =======================================================
+     MAIN NEW SECTION CONTAINER & UNIFORM PADDING
+     ======================================================= */
+  .sb-news-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 16px !important; /* Perfect uniform padding on both sides of the section */
+    margin: 12px auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-news-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .sb-news-left-col, 
+  .sb-news-right-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* =======================================================
+     PRIMARY LEAD FEATURED ARTICLE (TEXT ALIGNED WITH IMAGE)
+     ======================================================= */
+ @media (max-width: 600px) {
+  /* =======================================================
+     CORE STRUCTURAL WRAPPERS WITH EQUAL SIDE MARGINS
+     ======================================================= */
+  .sb-news-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 16px !important; /* Uniform structural spacing on both left & right edges */
+    margin: 12px auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* =======================================================
+     PRIMARY LEAD FEATURED ARTICLE (FLAWLESSLY ALIGNED GRID)
+     ======================================================= */
+  .sb-lead-first {
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .sb-lead-row {
+    display: flex !important;
+    flex-direction: column !important; /* Stacks image directly above text */
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Image Panel Base Container */
+  .sb-lead-img-panel {
+    order: 1 !important; /* Locks image to top position */
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 14px 0 !important;
+    padding: 0 !important; /* Strips any residual padding */
+    box-sizing: border-box !important;
+    display: block !important;
+  }
+
+  /* Clean Image Edge Scaling */
+  .sb-lead-img-panel img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 4px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Text Panel: Locked identically to the outer bounding box edges of the image */
+  .sb-lead-text-panel {
+    order: 2 !important; /* Locks text below the image view */
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important; /* Enforces absolute edge alignment with the above image boundaries */
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    text-align: left !important;
+  }
+
+  /* Core Title Typography Layout */
+  .sb-lead-title {
+    font-size: 26px !important;
+    line-height: 34px !important;
+    font-weight: 700 !important;
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    color: #000000 !important;
+    display: block !important;
+  }
+
+  /* Body Summary Text Layout */
+  .sb-lead-summary {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #374151 !important;
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  /* Meta Placement Formatting Wrapper */
+  .sb-lead-text-panel > div:last-child {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  /* News Time Stamp Element */
+  .sb-news-time {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Separation Border */
+  .sb-hr {
+    margin: 20px 0 !important;
+    border: 0 !important;
+    border-top: 1px solid #e5e7eb !important;
+    width: 100% !important;
+  }
+}
+
+ /* =======================================================
+     SUB ARTICLE ENTRIES (FORCE BLOCKS BACK TO ROW VIEW)
+     ======================================================= */
+  .sb-sub-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+    height: auto !important; 
+    margin-top: 10px !important;
+  }
+
+  .sb-sub-col, 
+  .sb-grid-33 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: none !important;
+  }
+
+  /* Structural Box Override */
+  .sb-news-card, 
+  .sb-news-card-alt {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important; 
+    min-height: 0 !important;
+    max-height: none !important;
+    background-color: #f0f4f9 !important; /* Soft blue tint background */
+    border-radius: 8px !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    overflow: hidden !important;
+  }
+
+  /* Hard Flex Row Realignment */
+  .sb-news-card .sb-card-flex,
+  .sb-news-card-alt .sb-card-flex {
+    display: flex !important;
+    flex-direction: row !important; /* Forces side-by-side view */
+    align-items: center !important;  /* Centers elements vertically */
+    justify-content: space-between !important;
+    gap: 14px !important;
+    width: 100% !important;
+    height: auto !important; 
+    max-height: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Normalizes thumbnail images sizes */
+  .sb-card-flex > .sb-card-img-wrap,
+  .sb-card-flex > .sb-card-img-wrap-alt {
+    width: 100px !important;   
+    height: 68px !important;   
+    max-width: 100px !important;
+    max-height: 68px !important;
+    flex-shrink: 0 !important; /* Blocks image compression */
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+
+  /* Image tag container rendering normalization */
+  .sb-card-flex > .sb-card-img-wrap img,
+  .sb-card-flex > .sb-card-img-wrap-alt img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important; 
+    border-radius: 6px !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  /* Forces text layouts to show back up inside the card boundaries */
+  .sb-card-flex > .sb-card-text, 
+  .sb-card-flex > .sb-card-text-alt {
+    flex: 1 !important; 
+    min-width: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  /* =======================================================
+     STRICT ORDER INVERSION CONTROLS
+     ======================================================= */
+  .sb-card-flex > :first-child {
+    order: 1 !important;
+  }
+  .sb-card-flex > :nth-child(2) {
+    order: 2 !important;
+  }
+
+  /* Typography configuration inside boxes */
+  .sb-card-title {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: normal !important; 
+    word-break: break-word !important; 
+    text-align: left !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important; /* Dynamic line wrap clamp fallback */
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  /* =======================================================
+     SIDEBAR LOWER FEED ITEMS LIST EXTENSION ADJUSTMENTS
+     ======================================================= */
+  .sb-side-item {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 12px 0 !important; /* Balanced top and bottom padding for the list item */
+    margin: 0 !important;
+    border-bottom: 1px solid #edf2f7 !important; /* Soft gray dividing border line */
+    box-sizing: border-box !important;
+    float: none !important;
+  }
+
+  /* Clear out any trailing border on the final list element */
+  .sb-side-item:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Strict horizontal layout control for the inner row wrapper */
+  .sb-side-item .sb-card-flex {
+    display: flex !important;
+    flex-direction: row !important; /* Enforces absolute side-by-side row behavior */
+    align-items: center !important;  /* Centers thumbnail and title vertically */
+    justify-content: flex-start !important;
+    background: transparent !important; /* Sidebar lists keep a transparent backing flow */
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 14px !important; /* Uniform gap between image container and text */
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Image Thumbnail Wrapper Control */
+  .sb-side-item .sb-card-img-wrap {
+    width: 110px !important;   /* Fixed structural width matching image proportion */
+    height: 70px !important;   /* Fixed structural height matching image proportion */
+    max-width: 110px !important;
+    max-height: 70px !important;
+    flex-shrink: 0 !important; /* Blocks desktop styling from squishing the thumbnail */
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    display: block !important;
+  }
+
+  /* Smooth image scale within the container boundary */
+  .sb-side-item .sb-card-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Prevents compression distortions */
+    border-radius: 6px !important; /* Clean rounded edges */
+    display: block !important;
+  }
+
+  /* Text Wrapper Element Configuration */
+  .sb-side-item .sb-card-text,
+  .sb-side-item .sb-card-text-alt {
+    flex: 1 !important; /* Allows text block to stretch out and fill the remaining area */
+    min-width: 0 !important; /* Prevents long strings from breaking layout box bounds */
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: auto !important;
+  }
+
+  /* Core Card Title Text Formatting */
+  .sb-side-item .sb-card-title {
+    font-size: 15px !important; /* Clean legible headline font size */
+    line-height: 20px !important; /* Balanced line spacing for text clarity */
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: normal !important; /* Corrects multi-line text wrapping */
+    word-break: break-word !important; /* Prevents text elements falling off screen boundaries */
+    text-align: left !important;
+    display: block !important;
+  }
+}
+
+/* =======================================================
+     WAR SITUATION (ইরান - যুক্তরাষ্ট্র - ইসরায়েল) MOBILE EDGE FIX
+     ======================================================= */
+  @media (max-width: 767px) {
+    /* Apply total structural calculation reset to all items inside this container */
+    .sb-news-section,
+    .sb-news-section *,
+    .sb-news-row,
+    .sb-news-left-col,
+    .sb-war-grid {
+      box-sizing: border-box !important;
+    }
+
+    /* 1. Global Container Reset */
+    .sb-news-section {
+      width: 100% !important;
+      max-width: 100vw !important; /* Forces structural wrapper to stay inside screen walls */
+      margin: 20px 0 0 0 !important; /* Strips horizontal margins that cause layout shifts */
+      padding: 0 12px !important; /* Safe, uniform inner margin gutter spacing */
+      overflow: hidden !important;
+    }
+
+    /* Override parent bootstrap flex layout footprints */
+    .sb-news-row {
+      display: block !important; 
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Flatten desktop column split overrides */
+    .sb-news-left-col,
+    .sb-news-right-col {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+      flex: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+
+    /* 2. Responsive Grid Layer System */
+    .sb-war-grid {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important; /* Perfect 2-column distribution */
+      column-gap: 12px !important; 
+      row-gap: 16px !important; 
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* Make both main-col and sub-col behave identically inside the grid matrix */
+    .sb-war-main-col,
+    .sb-war-sub-col {
+      grid-column: span 1 !important; 
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* 3. Card Structural Details */
+    .sb-war-card {
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100% !important;
+      text-decoration: none !important;
+    }
+
+    /* Image Scaling Layout Specs */
+    .sb-war-card img {
+      width: 100% !important;
+      height: 105px !important; 
+      object-fit: cover !important; 
+      border-radius: 6px !important;
+      display: block !important;
+      margin: 0 0 8px 0 !important;
+    }
+
+    /* Headline Typography Setup */
+    .sb-war-card-title,
+    .sb-war-card-title-sm {
+      font-size: 14px !important;
+      line-height: 20px !important;
+      font-weight: 700 !important;
+      color: #000000 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      text-align: left !important;
+      white-space: normal !important;
+      word-break: break-word !important;
+      display: block !important;
+    }
+  }
+
+  /* =======================================================
+     OPINION COMPONENT (মতামত) COMPACT OVERRIDES
+     ======================================================= */
+  .opinion_main_wrapper {
+    height: auto !important;
+    margin-top: 10px !important;
+    /* Perfectly matches the war situation container layout boundaries */
+    padding: 12px !important; 
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+    box-sizing: border-box !important;
+    width: calc(100% - 24px) !important; /* Prevents edge overflow across mobile screens */
+  }
+
+  .tt_update_title {
+    margin-bottom: 10px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .title_text {
+    font-size: 15px !important;
+  }
+
+  /* Compresses structural bootstrap columns within the sliding panes */
+  .opinion_main_wrapper .row.g-3 {
+    --bs-gutter-x: 8px !important; /* Minimizes grid layout padding footprint */
+    --bs-gutter-y: 8px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .opinion_main_wrapper .col-4,
+  .opinion_main_wrapper .col-8 {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    box-sizing: border-box !important;
+  }
+
+  .opinion_custom_card {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .opinion_avatar_wrapper {
+    width: 54px !important;
+    height: 54px !important;
+    margin: 0 auto !important;
+  }
+
+  .opinion_avatar_img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+  }
+
+  .card-opinion-heading {
+    font-size: 13px !important; /* Scaled down perfectly to match condensed block limits */
+    line-height: 17px !important;
+    font-weight: 700 !important;
+    color: #1a202c !important;
+  }
+
+  .card-summary {
+    font-size: 11px !important;
+    line-height: 15px !important;
+    color: #4a5568 !important;
+  }
+
+  /* Navigation control wrapper cleanup */
+  .custom_slider_dots {
+    padding-top: 8px !important;
+  }
