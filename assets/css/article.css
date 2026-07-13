@@ -312,3 +312,79 @@
     text-align: left !important;
     display: block !important;
   }
+@media print {
+  /* 1. Hide unwanted elements like navigation, footers, sidebars, and the print button itself */
+  nav, 
+  .related-post,
+  .tt-white, 
+  footer, 
+  .sidebar, 
+  .btn, 
+  script,
+  noscript {
+    display: none !important;
+  }
+
+  /* 2. Reset body styles for paper */
+  body {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 3. Ensure the main content takes up full width on paper */
+  .container, 
+  main, 
+  .main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* 4. Make links readable instead of just blue/underlined text */
+  a {
+    text-decoration: none !important;
+    color: #000 !important;
+  }
+  
+ 
+
+  /* 5. Clean up tables if you have them */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px !important;
+    font-size: 11pt;
+  }
+
+  /* 6. Avoid breaking a paragraph or heading right across a page fold */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    color: #000 !important;
+  }
+  
+  p, img, blockquote {
+    page-break-inside: avoid;
+  }
+
+  /* 7. Force browsers to print background colors and images if crucial */
+  * {
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+    print-color-adjust: exact !important;         /* Firefox */
+  }
+}
+@media print {
+  @page {
+    margin: 0.6cm; /* This removes the default browser headers/footers while keeping a clean paper edge margin */
+  }
+}
