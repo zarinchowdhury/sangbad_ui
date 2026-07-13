@@ -1,3 +1,133 @@
+/* ==========================================================================
+   DESKTOP DYNAMIC STICKY NAV REGULATION ENGINE (min-width: 992px)
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Base Hide State: Hide the logo completely on initial white main navbar view */
+  .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Scroll Trigger State: Triggers instantly on active position shifts */
+  .sb-navigation-row-wrapper.sticky,
+  .sb-navigation-row-wrapper.sticky-active,
+  .sb-navigation-row-wrapper[class*="sticky"] {
+    background-color: #2b3a80 !important; /* Royal Blue Background Match */
+    border-bottom: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    
+    /* ADD SPACING AT THE BOTTOM: Increases height slightly and pushes content clear */
+    height: 60px !important; 
+    padding-bottom: 6px !important; 
+  }
+
+  /* REVEAL THE LOGO PRECISELY DURING STICKY SCROLL RUNS */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 20px !important;
+    margin-right: 25px !important;
+    flex: 0 0 auto !important;
+    height: 100% !important;
+  }
+
+  /* REVEAL THE LOGO PRECISELY DURING STICKY SCROLL RUNS */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 20px !important;
+    margin-right: 25px !important;
+    margin-top: 6px !important; /* Pushes the image down slightly */
+    flex: 0 0 auto !important;
+    height: auto !important;
+  }
+
+  .sb-desktop-sticky-logo img {
+    height: 24px !important; /* Slightly scales down the image to match the proportions of image 2 */
+    width: auto !important;
+    display: block !important;
+  }
+
+  /* TEXT STYLE BASELINE COLOR TRANSITION TO WHITE OVER ROYAL BLUE */
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper[class*="sticky"] .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper.sticky .techtaranga_hmenuicon span i,
+  .sb-navigation-row-wrapper.sticky-active .techtaranga_hmenuicon span i {
+    color: #ffffff !important;
+  }
+
+  /* Transition the dropdown triangle accent to clean white as well */
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item.has-children > a::after,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item.has-children > a::after {
+    border-top-color: #ffffff !important;
+  }
+
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item a:hover,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item a:hover {
+    color: #dbdbdb !important;
+  }
+
+  /* CLEAR ACTION LINKS AND PULL HAMBURGER LEFT */
+  .sb-navigation-row-wrapper.sticky .techtaranga_hmenuicon a,
+  .sb-navigation-row-wrapper.sticky-active .techtaranga_hmenuicon a,
+  .sb-navigation-row-wrapper[class*="sticky"] .techtaranga_hmenuicon a {
+    display: none !important;
+  }
+
+  .sb-navigation-row-wrapper.sticky .sb-action-utilities-panel,
+  .sb-navigation-row-wrapper.sticky-active .sb-action-utilities-panel,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-action-utilities-panel {
+    margin-right: 40px !important; /* Shifts your hamburger inward from edge boundaries */
+  }
+}
+/* ==========================================================================
+   DESKTOP DESIRED FIX: HIDE LOGO ON INITIAL STATIC NAV BAR
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Force hide the desktop logo completely by default on the white main navbar */
+  .sb-navigation-row-wrapper:not(.sticky):not(.sticky-active) .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Only allow the logo to appear when one of the active scroll classes is applied */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo {
+    display: block !important;
+  }
+}
+/* ==========================================================================
+   POSITION-BASED AUTO LOGO SWITCHER (NO JAVASCRIPT REQUIRED)
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Base State: Hide the logo when navbar is sitting normally in the header flow */
+  .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Scroll Trigger State: Detects when the element is fixed/sticky on the screen */
+  /* This forces the logo to display ONLY when the navbar actively latches onto top: 0 */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[style*="position: fixed"] .sb-desktop-sticky-logo {
+    display: block !important;
+  }
+}
+/* ==========================================================================
+   MOBILE PRESERVATION BLOCK
+   ========================================================================== */
+@media (max-width: 991px) {
+    .sb-desktop-sticky-logo {
+        display: none !important;
+    }
+}
 .sb-side-item {
     text-decoration: none !important; /* Removes the underline */
 }

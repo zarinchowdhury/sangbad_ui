@@ -894,6 +894,136 @@ textarea {
 }
 
 /* ==========================================================================
+   DESKTOP DYNAMIC STICKY NAV REGULATION ENGINE (min-width: 992px)
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Base Hide State: Hide the logo completely on initial white main navbar view */
+  .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Scroll Trigger State: Triggers instantly on active position shifts */
+  .sb-navigation-row-wrapper.sticky,
+  .sb-navigation-row-wrapper.sticky-active,
+  .sb-navigation-row-wrapper[class*="sticky"] {
+    background-color: #2b3a80 !important; /* Royal Blue Background Match */
+    border-bottom: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    
+    /* ADD SPACING AT THE BOTTOM: Increases height slightly and pushes content clear */
+    height: 60px !important; 
+    padding-bottom: 6px !important; 
+  }
+
+  /* REVEAL THE LOGO PRECISELY DURING STICKY SCROLL RUNS */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 20px !important;
+    margin-right: 25px !important;
+    flex: 0 0 auto !important;
+    height: 100% !important;
+  }
+
+  /* REVEAL THE LOGO PRECISELY DURING STICKY SCROLL RUNS */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 20px !important;
+    margin-right: 25px !important;
+    margin-top: 6px !important; /* Pushes the image down slightly */
+    flex: 0 0 auto !important;
+    height: auto !important;
+  }
+
+  .sb-desktop-sticky-logo img {
+    height: 24px !important; /* Slightly scales down the image to match the proportions of image 2 */
+    width: auto !important;
+    display: block !important;
+  }
+
+  /* TEXT STYLE BASELINE COLOR TRANSITION TO WHITE OVER ROYAL BLUE */
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper[class*="sticky"] .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper.sticky .techtaranga_hmenuicon span i,
+  .sb-navigation-row-wrapper.sticky-active .techtaranga_hmenuicon span i {
+    color: #ffffff !important;
+  }
+
+  /* Transition the dropdown triangle accent to clean white as well */
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item.has-children > a::after,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item.has-children > a::after {
+    border-top-color: #ffffff !important;
+  }
+
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item a:hover,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item a:hover {
+    color: #dbdbdb !important;
+  }
+
+  /* CLEAR ACTION LINKS AND PULL HAMBURGER LEFT */
+  .sb-navigation-row-wrapper.sticky .techtaranga_hmenuicon a,
+  .sb-navigation-row-wrapper.sticky-active .techtaranga_hmenuicon a,
+  .sb-navigation-row-wrapper[class*="sticky"] .techtaranga_hmenuicon a {
+    display: none !important;
+  }
+
+  .sb-navigation-row-wrapper.sticky .sb-action-utilities-panel,
+  .sb-navigation-row-wrapper.sticky-active .sb-action-utilities-panel,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-action-utilities-panel {
+    margin-right: 40px !important; /* Shifts your hamburger inward from edge boundaries */
+  }
+}
+/* ==========================================================================
+   DESKTOP DESIRED FIX: HIDE LOGO ON INITIAL STATIC NAV BAR
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Force hide the desktop logo completely by default on the white main navbar */
+  .sb-navigation-row-wrapper:not(.sticky):not(.sticky-active) .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Only allow the logo to appear when one of the active scroll classes is applied */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo {
+    display: block !important;
+  }
+}
+/* ==========================================================================
+   POSITION-BASED AUTO LOGO SWITCHER (NO JAVASCRIPT REQUIRED)
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Base State: Hide the logo when navbar is sitting normally in the header flow */
+  .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Scroll Trigger State: Detects when the element is fixed/sticky on the screen */
+  /* This forces the logo to display ONLY when the navbar actively latches onto top: 0 */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[style*="position: fixed"] .sb-desktop-sticky-logo {
+    display: block !important;
+  }
+}
+/* ==========================================================================
+   MOBILE PRESERVATION BLOCK
+   ========================================================================== */
+@media (max-width: 991px) {
+    .sb-desktop-sticky-logo {
+        display: none !important;
+    }
+}
+/* ==========================================================================
    DYNAMIC STICKY STATE ENGINE (Triggers on Scroll for Desktop only)
    ========================================================================== */
 .sb-navigation-row-wrapper.is-sticky {
@@ -1598,6 +1728,112 @@ textarea {
   }
 }
 
+/* =======================================================
+   THE ULTIMATE HORIZONTAL NAV + DROPDOWN FIX
+   ======================================================= */
+
+/* 1. Reset Containers: Prevent ANY hidden clipping on desktop */
+.sb-nav-scroller-track, 
+.sb-nav-scroller-track nav {
+    overflow: visible !important; 
+    position: relative;
+}
+
+/* 2. Main Menu Core Alignment */
+.tt_nav-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap; /* Allows natural wrapping on desktop if needed, overridden on mobile */
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tt_nav-menu .nav-item {
+    position: relative; /* CRITICAL: Anchor point for dropdowns */
+    display: block;
+}
+
+.tt_nav-menu .nav-item > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    white-space: nowrap; /* Keeps text links clean */
+}
+
+/* 3. Dropdown Menu Base Engine */
+.tt_nav-menu .child-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    min-width: 220px !important;
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    list-style: none !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+    border: 1px solid #eeeeee !important;
+    z-index: 99999 !important; /* Forces it over ALL page elements */
+    
+    /* Hidden by default */
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0;
+}
+
+/* 4. Desktop Hover Activator */
+@media (min-width: 992px) {
+    .tt_nav-menu .nav-item.has-children:hover .child-menu {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+/* 5. Submenu Child Items */
+.tt_nav-menu .child-item a {
+    display: block !important;
+    padding: 8px 20px !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    text-align: left;
+}
+
+.tt_nav-menu .child-item a:hover {
+    background-color: #0d1b2a;
+  color: #ffffff !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+/* =======================================================
+   MOBILE OVERRIDE: Safe Horizontal Touch-Swiping
+   ======================================================= */
+@media (max-width: 991px) {
+    /* Enable horizontal scrolling mechanics only on mobile viewports */
+    .sb-nav-scroller-track {
+        overflow-x: auto !important;
+        overflow-y: visible !important; 
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+    }
+    
+    .tt_nav-menu {
+        flex-wrap: nowrap !important; /* Force items to stay on a single line for swiping */
+        display: inline-flex !important; /* Essential for mobile overflow calculations */
+    }
+
+    /* On mobile screens, absolute popups crash. We turn them into accordion fallbacks 
+       or visible items when active. Alternatively, to keep it clean on swipe: */
+    .tt_nav-menu .nav-item.has-children:active .child-menu,
+    .tt_nav-menu .nav-item.has-children:focus-within .child-menu {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: absolute !important;
+    }
+}
     /* ==========================================================================
    FIFA Module Layout Container
    ========================================================================== */
@@ -2451,7 +2687,7 @@ textarea {
 /* Container height management */
 .opinion_main_wrapper {
   min-height: 650px !important; 
-  width: 450px !important; /* Specify your exact target layout width pixel count here */
+ width: 450px !important; /* Specify your exact target layout width pixel count here */
   max-width: 400px; 
   margin: 0 auto;   
 }
@@ -4553,4 +4789,46 @@ textarea {
     padding: 5px 10px !important;
     border-radius: 999px !important;
   }
+}
+/* ==========================================================================
+   BACK TO TOP FLOATING ACTION BUTTON
+   ========================================================================== */
+#techtaranga_backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff; /* Matches your navbar's royal blue theme color */
+  color: #000;
+  border: none;
+  border-radius: 50%; /* Makes it a clean circle */
+  box-decoration-break: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  
+  /* Smooth animation engine controls */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+#techtaranga_backToTop:hover {
+  background-color: #f54d4d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Visibility driver activated by the scroll script */
+#techtaranga_backToTop.show-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
