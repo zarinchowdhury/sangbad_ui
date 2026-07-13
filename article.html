@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,684 +10,861 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Noto Serif & Hind Siliguri Bengali Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Noto+Serif+Bengali:wght@700;900&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets\css\article.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Noto+Serif+Bengali:wght@700;900&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets\css\article.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
 
- <header class="sb-header-wrapper">
-  <div class="container-custom">
-    
-    <!-- TOP PORTION: Brand Stamp and News Columns (Hidden on Mobile) -->
-    <div class="sb-top-branding-row">
-      <!-- Logo Section Rendered as Image -->
-      <div class="sb-logo-box">
-        <a href="#">
-          <img src="https://sangbad.net/uploads/sangbad-logo_2.png" alt="sangbad" class="sb-custom-logo">
-        </a>
+  <header class="sb-header-wrapper">
+    <div class="container-custom">
+
+      <!-- TOP PORTION: Brand Stamp and News Columns (Hidden on Mobile) -->
+      <div class="sb-top-branding-row">
+        <!-- Logo Section Rendered as Image -->
+        <div class="sb-logo-box">
+          <a href="#">
+            <img src="https://sangbad.net/uploads/sangbad-logo_2.png" alt="sangbad" class="sb-custom-logo">
+          </a>
+        </div>
+
+        <!-- Featured News Layout columns -->
+        <div class="sb-stories-row">
+          <div class="sb-story-card">
+            <div class="sb-thumb-box">
+              <img
+                src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833638775430.jpg.pagespeed.ic.U8krQJKiqs.webp"
+                alt="সাভার বিস্ফোরণ">
+            </div>
+            <a href="#" class="sb-story-text">সাভারে বিস্ফোরণের আগে ‘বিদ্যুৎ উধাও’, সন্দেহে তদন্ত কমিটি</a>
+          </div>
+          <div class="sb-story-card">
+            <div class="sb-thumb-box">
+              <img
+                src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833608642354.jpg.pagespeed.ic.yT5XqBmX8c.webp"
+                alt="নাহিদ ইসলাম">
+            </div>
+            <a href="#" class="sb-story-text">সমাবেশে হামলার পেছনে রাজনৈতিক উদ্দেশ্য: নাহিদ ইসলাম</a>
+          </div>
+          <div class="sb-story-card">
+            <div class="sb-thumb-box">
+              <img
+                src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833565679501.jpg.pagespeed.ic.TkCaQavlfP.webp"
+                alt="গোটা বাহিনী">
+            </div>
+            <a href="#" class="sb-story-text">৪১ জনের ‘পাপে ধুঁকছে’ গোটা বাহিনী</a>
+          </div>
+        </div>
       </div>
 
-      <!-- Featured News Layout columns -->
-      <div class="sb-stories-row">
-        <div class="sb-story-card">
-          <div class="sb-thumb-box">
-            <img src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833638775430.jpg.pagespeed.ic.U8krQJKiqs.webp" alt="সাভার বিস্ফোরণ">
-          </div>
-          <a href="#" class="sb-story-text">সাভারে বিস্ফোরণের আগে ‘বিদ্যুৎ উধাও’, সন্দেহে তদন্ত কমিটি</a>
+      <!-- MOBILE TOPBAR: Logo + ই-পেপার + Burger -->
+      <div class="sb-mobile-header-row">
+        <div class="sb-mobile-header-logo">
+          <a href="#">
+            <img src="https://sangbad.net/uploads/sangbad-logo_2.png" alt="sangbad">
+          </a>
         </div>
-        <div class="sb-story-card">
-          <div class="sb-thumb-box">
-            <img src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833608642354.jpg.pagespeed.ic.yT5XqBmX8c.webp" alt="নাহিদ ইসলাম">
-          </div>
-          <a href="#" class="sb-story-text">সমাবেশে হামলার পেছনে রাজনৈতিক উদ্দেশ্য: নাহিদ ইসলাম</a>
+        <div class="sb-mobile-header-actions">
+          <a class="nav-epaper-btn" href="#"><i class="bi bi-newspaper"></i> ই-পেপার</a>
+          <span class="menu-trigger-icon cursor-pointer"><i class="bi bi-list"></i></span>
         </div>
-        <div class="sb-story-card">
-          <div class="sb-thumb-box">
-            <img src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833565679501.jpg.pagespeed.ic.TkCaQavlfP.webp" alt="গোটা বাহিনী">
+      </div>
+
+      <!-- BOTTOM PORTION: Unified Nav Menu and Action Controls Panel -->
+      <div id="stickyNavbar" class="sb-navigation-row-wrapper">
+        <div class="container-fluid px-3 h-100">
+          <div class="sb-navigation-row-container">
+
+            <!-- DEDICATED DESKTOP STICKY LOGO (Will show up strictly on desktop sticky mode) -->
+            <div class="sb-desktop-sticky-logo">
+              <a href="#">
+                <img src="https://sangbad.net/uploads/124xNxlogo-digital-white.png.pagespeed.ic.Agxsj5B3eG.webp"
+                  alt="sangbad">
+              </a>
+            </div>
+
+            <!-- MOBILE EXCLUSIVE MAIN LOGO (Left completely alone for your mobile views) -->
+            <div class="sb-mobile-logo-box">
+              <a href="#">
+                <img src="https://sangbad.net/uploads/sangbad-logo_2.png" alt="sangbad">
+              </a>
+            </div>
+
+            <!-- Nav Menu Navigation Track Wrapper -->
+            <div class="sb-nav-scroller-track">
+              <nav class="h-100">
+                <ul class="tt_nav-menu">
+                  <li class="nav-item"><a target="_self" href="#">সর্বশেষ</a></li>
+                  <li class="nav-item has-children">
+                    <a target="_self" href="#">খবর </a>
+                    <ul class="child-menu shadow border-top">
+                      <li class="child-item"><a target="_self" href="#">জাতীয়</a></li>
+                      <li class="child-item"><a target="_self" href="#">রাজনীতি</a></li>
+                      <li class="child-item"><a target="_self" href="#">রাজধানী</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item has-children">
+                    <a target="_self" href="#">সারাদেশ </a>
+                    <ul class="child-menu shadow border-top">
+                      <li class="child-item"><a target="_self" href="#">ঢাকা বিভাগ</a></li>
+                      <li class="child-item"><a target="_self" href="#">রাজশাহী বিভাগ</a></li>
+                      <li class="child-item"><a target="_self" href="#">চট্টগ্রাম বিভাগ</a></li>
+                      <li class="child-item"><a target="_self" href="#">সিলেট বিভাগ</a></li>
+                      <li class="child-item"><a target="_self" href="#">বরিশাল বিভাগ</a></li>
+                      <li class="child-item"><a target="_self" href="#">খুলনা বিভাগ</a></li>
+                      <li class="child-item"><a target="_self" href="#">রংপুর বিভাগ</a></li>
+                      <li class="child-item"><a target="_self" href="#">ময়মনসিংহ বিভাগ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a target="_self" href="international.html">বিশ্ব </a></li>
+                  <li class="nav-item"><a target="_self" href="#">অর্থনীতি</a></li>
+                  <li class="nav-item"><a target="_self" href="#">বিনোদন</a></li>
+                  <li class="nav-item"><a target="_self" href="#">খেলা</a></li>
+                  <li class="nav-item"><a target="_self" href="#">সাহিত্য</a></li>
+                  <li class="nav-item"><a target="_self" href="#">মতামত</a></li>
+                  <li class="nav-item"><a target="_self" href="#">সংস্কৃতি-ঐতিহ্য</a></li>
+                  <li class="nav-item"><a target="_self" href="#">ফিচার</a></li>
+                  <li class="nav-item has-children">
+                    <a target="_self" href="#">আরও </a>
+                    <ul class="child-menu shadow border-top">
+                      <li class="child-item"><a target="_self" href="#">অপরাধ</a></li>
+                      <li class="child-item"><a target="_self" href="#">শিক্ষা</a></li>
+                      <li class="child-item"><a target="_self" href="#">বিশেষ সাক্ষাৎকার</a></li>
+                      <li class="child-item"><a target="_self" href="#">ক্যাম্পাস</a></li>
+                      <li class="child-item"><a target="_self" href="#">স্বাস্থ্য</a></li>
+                      <li class="child-item"><a target="_self" href="#">জীবনধারা</a></li>
+                      <li class="child-item"><a target="_self" href="#">প্রযুক্তি</a></li>
+                      <li class="child-item"><a target="_self" href="#">বিশেষ প্রতিবেদন</a></li>
+                      <li class="child-item"><a target="_self" href="#">গণমাধ্যম</a></li>
+                      <li class="child-item"><a target="_self" href="#">আইন আদালত</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Action Utilities Panel -->
+            <div class="sb-action-utilities-panel">
+              <div class="techtaranga_hmenuicon h-100">
+                <a class="nav-search-btn border-start border-end" href="#"><i class="bi bi-search"></i> খুঁজুন </a>
+                <a class="nav-epaper-btn border-end" href="#"><i class="bi bi-newspaper"></i> ই-পেপার </a>
+                <a class="nav-login-btn border-end" href="#"><i class="bi bi-person-circle"></i> লগইন </a>
+                <span class="menu-trigger-icon cursor-pointer">
+                  <i class="bi bi-list"></i>
+                </span>
+              </div>
+            </div>
+
           </div>
-          <a href="#" class="sb-story-text">৪১ জনের ‘পাপে ধুঁকছে’ গোটা বাহিনী</a>
         </div>
       </div>
     </div>
+  </header>
 
-    <!-- MOBILE TOPBAR: Logo + ই-পেপার + Burger -->
-    <div class="sb-mobile-header-row">
-      <div class="sb-mobile-header-logo">
-        <a href="#">
-          <img src="https://sangbad.net/uploads/sangbad-logo_2.png" alt="sangbad">
-        </a>
-      </div>
-      <div class="sb-mobile-header-actions">
-        <a class="nav-epaper-btn" href="#"><i class="bi bi-newspaper"></i> ই-পেপার</a>
-        <span class="menu-trigger-icon cursor-pointer"><i class="bi bi-list"></i></span>
-      </div>
-    </div>
-
-    <!-- BOTTOM PORTION: Unified Nav Menu and Action Controls Panel -->
-<div id="stickyNavbar" class="sb-navigation-row-wrapper">
-  <div class="container-fluid px-3 h-100">
-    <div class="sb-navigation-row-container">
-      
-      <!-- DEDICATED DESKTOP STICKY LOGO (Will show up strictly on desktop sticky mode) -->
-      <div class="sb-desktop-sticky-logo">
-        <a href="#">
-          <img src="https://sangbad.net/uploads/124xNxlogo-digital-white.png.pagespeed.ic.Agxsj5B3eG.webp" alt="sangbad">
-        </a>
-      </div>
-
-      <!-- MOBILE EXCLUSIVE MAIN LOGO (Left completely alone for your mobile views) -->
-      <div class="sb-mobile-logo-box">
-        <a href="#">
-          <img src="https://sangbad.net/uploads/sangbad-logo_2.png" alt="sangbad">
-        </a>
-      </div>
-
-      <!-- Nav Menu Navigation Track Wrapper -->
-      <div class="sb-nav-scroller-track">
-        <nav class="h-100">
-          <ul class="tt_nav-menu">
-            <li class="nav-item"><a target="_self" href="#">সর্বশেষ</a></li>
-            <li class="nav-item has-children">
-              <a target="_self" href="#">খবর </a>
-              <ul class="child-menu shadow border-top">
-                <li class="child-item"><a target="_self" href="#">জাতীয়</a></li>
-                <li class="child-item"><a target="_self" href="#">রাজনীতি</a></li>
-                <li class="child-item"><a target="_self" href="#">রাজধানী</a></li>
-              </ul>
-            </li>
-            <li class="nav-item has-children">
-              <a target="_self" href="#">সারাদেশ </a>
-              <ul class="child-menu shadow border-top">
-                <li class="child-item"><a target="_self" href="#">ঢাকা বিভাগ</a></li>
-                <li class="child-item"><a target="_self" href="#">রাজশাহী বিভাগ</a></li>
-                <li class="child-item"><a target="_self" href="#">চট্টগ্রাম বিভাগ</a></li>
-                <li class="child-item"><a target="_self" href="#">সিলেট বিভাগ</a></li>
-                <li class="child-item"><a target="_self" href="#">বরিশাল বিভাগ</a></li>
-                <li class="child-item"><a target="_self" href="#">খুলনা বিভাগ</a></li>
-                <li class="child-item"><a target="_self" href="#">রংপুর বিভাগ</a></li>
-                <li class="child-item"><a target="_self" href="#">ময়মনসিংহ বিভাগ</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a target="_self" href="international.html">বিশ্ব </a></li>
-            <li class="nav-item"><a target="_self" href="#">অর্থনীতি</a></li>
-            <li class="nav-item"><a target="_self" href="#">বিনোদন</a></li>
-            <li class="nav-item"><a target="_self" href="#">খেলা</a></li>
-            <li class="nav-item"><a target="_self" href="#">সাহিত্য</a></li>
-            <li class="nav-item"><a target="_self" href="#">মতামত</a></li>
-            <li class="nav-item"><a target="_self" href="#">সংস্কৃতি-ঐতিহ্য</a></li>
-            <li class="nav-item"><a target="_self" href="#">ফিচার</a></li>
-            <li class="nav-item has-children">
-              <a target="_self" href="#">আরও </a>
-              <ul class="child-menu shadow border-top">
-                <li class="child-item"><a target="_self" href="#">অপরাধ</a></li>
-                <li class="child-item"><a target="_self" href="#">শিক্ষা</a></li>
-                <li class="child-item"><a target="_self" href="#">বিশেষ সাক্ষাৎকার</a></li>
-                <li class="child-item"><a target="_self" href="#">ক্যাম্পাস</a></li>
-                <li class="child-item"><a target="_self" href="#">স্বাস্থ্য</a></li>
-                <li class="child-item"><a target="_self" href="#">জীবনধারা</a></li>
-                <li class="child-item"><a target="_self" href="#">প্রযুক্তি</a></li>
-                <li class="child-item"><a target="_self" href="#">বিশেষ প্রতিবেদন</a></li>
-                <li class="child-item"><a target="_self" href="#">গণমাধ্যম</a></li>
-                <li class="child-item"><a target="_self" href="#">আইন আদালত</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Action Utilities Panel -->
-      <div class="sb-action-utilities-panel">
-        <div class="techtaranga_hmenuicon h-100">
-          <a class="nav-search-btn border-start border-end" href="#"><i class="bi bi-search"></i> খুঁজুন </a>
-          <a class="nav-epaper-btn border-end" href="#"><i class="bi bi-newspaper"></i> ই-পেপার </a>
-          <a class="nav-login-btn border-end" href="#"><i class="bi bi-person-circle"></i> লগইন </a>
-          <span class="menu-trigger-icon cursor-pointer">
-            <i class="bi bi-list"></i>
-          </span>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-  </div>
-</header>
-
-<script>
-  window.addEventListener('scroll', function() {
-    // Only toggle sticky class on desktop viewports
-    if (window.innerWidth > 991) {
-      const navbar = document.getElementById('stickyNavbar');
-      if (window.scrollY > 120) {
-        navbar.classList.add('is-sticky');
-      } else {
-        navbar.classList.remove('is-sticky');
+  <script>
+    window.addEventListener('scroll', function () {
+      // Only toggle sticky class on desktop viewports
+      if (window.innerWidth > 991) {
+        const navbar = document.getElementById('stickyNavbar');
+        if (window.scrollY > 120) {
+          navbar.classList.add('is-sticky');
+        } else {
+          navbar.classList.remove('is-sticky');
+        }
       }
-    }
-  });
-</script>
-<script>
-  window.addEventListener('scroll', function() {
-    var navBar = document.getElementById('stickyNavbar');
-    if (window.scrollY > 80) {
-      navBar.classList.add('sticky-active');
-    } else {
-      navBar.classList.remove('sticky-active');
-    }
-  });
-</script>
+    });
+  </script>
+  <script>
+    window.addEventListener('scroll', function () {
+      var navBar = document.getElementById('stickyNavbar');
+      if (window.scrollY > 80) {
+        navBar.classList.add('sticky-active');
+      } else {
+        navBar.classList.remove('sticky-active');
+      }
+    });
+  </script>
 
   <!-- মেইন কন্টেইনার সেকশন -->
-<section class="py-4" style="font-family: 'SolaimanLipi', 'Arial', sans-serif; color: rgb(33, 37, 41); background-color: #fff;">
-  <div class="container">
-    
-    <!-- ক্যাটাগরি বা ব্রেডক্রাম্ব (দ্বিতীয় ছবির মতো নিচে লাল বর্ডার) -->
-    <div class="row">
-      <div class="col-12">
-        <h6 class="text-danger fw-bold mb-3 d-inline-block pb-1" style="font-size: 22px; border-bottom: 2px solid #dc3545;">জাতীয়</h6>
-      </div>
-    </div>
+  <section class="py-4"
+    style="font-family: 'SolaimanLipi', 'Arial', sans-serif; color: rgb(33, 37, 41); background-color: #fff;">
+    <div class="container">
 
-    <div class="row g-4">
-      
-      <!-- বাম পাশের মূল কন্টেন্ট কলাম -->
-      <div class="col-lg-9">
-        <div>
-          <!-- মেইন নিউজ টাইটেল (ফন্ট সাইজ ও ওয়েট বৃদ্ধি করা হয়েছে) -->
-          <h1 class="m-0 mb-4 fw-black text-dark" style="font-size: 36px; font-weight: 800; line-height: 1.3; letter-spacing: -0.5px;">গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা</h1>
-
-          <!-- রিপোর্টার ইনফো এবং শেয়ার বাটন রো -->
-          <div class="row g-3 align-items-center mb-3">
-            <!-- রিপোর্টার অংশ -->
-            <div class="col-12 col-md-6">
-              <div class="d-flex align-items-center">
-                <a href="javascript:void(0);">
-                  <img class="rounded-0" height="45px" width="auto" src="data:image/webp;base64,UklGRgQEAABXRUJQVlA4TPcDAAAvTUAMEFXIwrbNzKO3Tte2d/8aa9u2bdu2WRyubdu2bdtWcdQkM5NkcfhNEiGJtm1Dkl6wbNu2bbtmWbZt23b1yLZt27ZtdyQi4k8A8T0uf1xJyuNaxw1s+7jZcXvHOe543Jdoj9+EmAmxRBMEE9Jte0LBhHIpJ9RO6CDq3VV+gqj8ZPml5ZfZdvlN5bfZdvn95Y9JmesMrhPhJp6XX1d9efV9RClPKucdR7mm3Ldt5bHygUj5qPxXGCKIHMeBGBIpwYJzHAfIyOWP4TmQpf6/SXIpzWFwloLrgCP6w4oK78RPAQ5e45VA/GQDk+t43zwAET2TiQ5vOJX0Pnhey0JjCIE1e1kgbtN0QS0eA2h+JwfWc5LhR3/jAP61e1jw5okU6d1lATEnsKtCTRKDpb/NSYYei8HNQc2GeYFdGWaSNQHgOcnAE3GYOZ7KKO94gVsRpiuGOGo2Kfk9bhAquYaXdJ3W+IRtsR1QUnADXgHJ8LXvSV5ZnvzCGGYLdOBD4KkiG4usLrJLuQ9OA/yScAC9ITc796vMv839E3gg1bBdb2U4uR4T4wUt/EkANtv5XvU7bL7RACL6Qew1adONbyrSdaFvfd7d3l/AAekNP/payRCU6ziQxM+KSzY7/MIBOs/pBu5W4Zj24nFNQ3Stc/vRqf+oDjG+oIPXcZIpbh8zMMJ9jcO6xL7Mj5dM/uSohQE4XlRdFB16hJtM9uaYo9HisHX2ZZbjD5DIJF/meBtrrUf4TkiABONX8mOchhTkW/1AjsNqr6A94KThXXfUJubIHKcvGTLEY2sCAveBlSZ0XVI7ZgIGyOt7w7YLajouq47KyXwBrDSlBhXYBiSlU2j1pLRttve176vdM5jrPao8dIf7DyCzam1yhwgoIXj8wy+IpZm1YrHiy1RMr0UXddw/WwsNyrGYGDx4l7XQKR18MhB++R1pPzAmdVfotvBB5ZkuCKGpSWAN4vm1/JqopCcKANVXVIllTK7Duqj2tBEgynNkbOYzZdJ5W8PrD4vrkL4XMnnOClPe1hk6YPkDA+jPc1AIHTbxfScEXIaLYzOeyRFz7VExNCvcneEHccDOZcG/ceI4sUIQtawAz8mNqbJypT2Ab0SWqBi84jwX/K02d8IYwDsiWRS9pAJ2s+F7jeHTOgD+EYnC6JVc4FmGxJ9ad53VAIg0AN1SS3pdT5IXveofqwDEMkAUcCQilgcd0Qo4pQY+zc0+eY/lSLQu3zf1R49Y/8QAfF/KV5nx+A8kIcpzICLmKwUQHxGi4YQem5TyUg4g8JjFmKKBldvsyJAnrcAm8HnXfPSgbQwGsMSr8m4/gdwkmY/PEjyXAVhm2lP1xzZYA5gBAA==" alt="নিজস্ব বার্তা পরিবেশক">
-                </a>
-                <div class="ms-2">
-                  <a href="javascript:void(0);" class="text-dark text-decoration-none">
-                    <h5 class="m-0 h5 fw-bold" style="font-size: 18px; line-height: 1.2;">নিজস্ব বার্তা পরিবেশক</h5>
-                  </a>
-                  <span class="text-muted" style="font-size: 13px;">
-                    <i class="bi bi-clock"></i> প্রকাশ: ৮ জুলাই ২০২৬, ১০:০৬ পিএম
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <!-- সোশ্যাল শেয়ার বাটন -->
-            <div class="col-12 col-md-6 text-md-end">
-              <div class="d-inline-flex align-items-center gap-1">
-                <!-- কাউন্টার টেক্সট -->
-                <div class="text-center me-2" style="line-height: 1.1;">
-                  <span class="d-block fw-bold text-dark" style="font-size: 14px;">3</span>
-                  <span class="text-muted" style="font-size: 10px;">Shares</span>
-                </div>
-                <!-- ফেসবুক -->
-                <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border" style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
-                  <i class="bi bi-facebook" style="font-size: 12px;"></i>
-                </a>
-                <!-- মেসেঞ্জার -->
-                <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border" style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
-                  <i class="bi bi-messenger" style="font-size: 12px;"></i>
-                </a>
-                <!-- এক্স / টুইটার -->
-                <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border" style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
-                  <i class="bi bi-twitter-x" style="font-size: 12px;"></i>
-                </a>
-                <!-- হোয়াটসঅ্যাপ -->
-                <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border" style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
-                  <i class="bi bi-whatsapp" style="font-size: 12px;"></i>
-                </a>
-                <!-- প্রিন্ট -->
-                <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border" style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
-                  <i class="bi bi-printer" style="font-size: 12px;"></i>
-                </a>
-                <!-- কপি লিংক -->
-                <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border" style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
-                  <i class="bi bi-copy" style="font-size: 12px;"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-3">
-
-          <!-- আর্টিকেলের ফিচার্ড ইমেজ -->
-          <div class="story-image popup-gallery mb-2">
-            <a title="গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা" href="javascript:void(0);">
-              <img class="w-100 rounded-0" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835269486240.jpg.pagespeed.ic.ZMdbCznE91.webp" alt="গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা">
-            </a>
-          </div>
-          
-          <!-- ইমেজের ক্যাপশন বা ফুটার নোট -->
-          <div class="p-2 py-1 text-center" style="background:#f8f9fa; border-top: 1px solid #dee2e6;">
-            <h6 class="m-0 text-muted" style="font-size: 13px;">জামালপুর-৩ আসনের সংসদ সদস্য মোস্তাফিজুর রহমান বাবুল</h6>
-          </div>
-          
-          <!-- মেইন নিউজ ডিটেইলস (প্যারাগ্রাফসমূহ) -->
-          <div class="story-details tt-text mt-4 text-justify" style="line-height: 1.8; font-size: 17px; color: #212529;">
-            <p>গ্রামাঞ্চলে বিদ্যুতের চরম লোডশেডিং নিয়ে জাতীয় সংসদে ক্ষোভ ও অস্বস্তি প্রকাশ করেছেন সরকারদলীয় সংসদ সদস্য মোস্তাফিজুর রহমান বাবুল। তিনি বলেছেন, বিদ্যুৎ এখন গ্রামে একটি বড় ইস্যু হয়ে দাঁড়িয়েছে এবং নির্বাচনী এলাকায় গেলে এই সমস্যার কারণে সাধারণ মানুষের মুখোমুখি হতে তারা বিব্রতবোধ করছেন।</p>
-            <p>বুধবার (৮ জুলাই) স্পিকার হাফিজ উদ্দিন আহমদের সভাপতিত্বে সংসদ অধিবেশনে প্রশ্নোত্তর পর্বে তিনি এ কথা বলেন। একই অধিবেশনে ভূমিমন্ত্রী মিজানুর রহমান মিনু জানিয়েছেন, সরকারি খাসজমি অবৈধ দখলমুক্ত করতে সরকার সব ধরনের কঠোর ব্যবস্থা গ্রহণ করবে।</p>
-            <p>সম্পূরক প্রশ্নের সুযোগ নিয়ে সংসদ সদস্য মোস্তাফিজুর রহমান বাবুল বলেন, ‘গ্রামে-গঞ্জে বিদ্যুৎ এখন সবচেয়ে বড় ইস্যু। আমরা যখন গ্রামে যাই, এই সমস্যা আমাদের বিব্রত করে, অস্বস্তিতে ফেলে।’</p>
-            <p>তিনি নিজের নির্বাচনী এলাকা মেলান্দহ ও মাদারগঞ্জ উপজেলার উদাহরণ টেনে জানান, পিক আওয়ারে সেখানে বিদ্যুতের চাহিদা ৪৩ মেগাওয়াট হলেও সরবরাহ পাওয়া যাচ্ছে মাত্র ২৭ মেগাওয়াট। অফ-পিক সময়েও চাহিদার তুলনায় সরবরাহ অনেক কম। ফলে গড়ে ৩৪ থেকে ৩৮ শতাংশ লোডশেডিং করতে হচ্ছে। এই পরিস্থিতি থেকে কবে নাগাদ উত্তরণ সম্ভব হবে, সে বিষয়ে তিনি বিদ্যুৎমন্ত্রীর কাছে সুনির্দিষ্ট ব্যাখ্যা চান。</p>
-            <p>জবাবে বিদ্যুৎমন্ত্রী ইকবাল হাসান মাহমুদ টুকু ট্রান্সমিশন লাইনের সমস্যার কথা উল্লেখ করেন। তিনি বলেন, ‘ময়মনসিংহ অঞ্চলে বিদ্যুৎ সংকটের মূল কারণ হলো সঞ্চালন লাইনের সীমাবদ্ধতা। এ সমস্যা সমাধানে নতুন传输 প্রকল্প হাতে নেওয়া হয়েছে। তবে বড় আকারের টাওয়ার নির্মাণের জন্য জমি অধিগ্রহণে আইনি জটিলতার কারণে কাজ বিলম্বিত হয়েছে। ভালুকা এলাকায় জমি সংক্রান্ত একটি মামলায় সরকার জয়ী হলেও কাজ পুরোপুরি শুরু করা সম্ভব হয়নি।’</p>
-            <p>তবে স্থানীয় সংসদ সদস্যদের সহযোগিতায় দ্রুত কাজ শেষ করে ওই অঞ্চলের বিদ্যুৎ সংকট কমানোর आश्वासन দেন মন্ত্রী।</p>
-            <p>সংসদ সদস্য মোহাম্মদ নুরুল ইসলামের একটি জনগুরুত্বসম্পন্ন নোটিশের জবাবে ভূমিমন্ত্রী মিজানুর রহমান মিনু বলেন, ভূমিদস্যুদের কবল থেকে সরকারি খাসজমি উদ্ধার করে প্রকৃত ভূমিহীনদের মধ্যে তা বিতরণে সরকার বদ্ধপরিকর। তিনি জানান, সরকারের ১৮০ দিনের বিশেষ কর্মসূচিতে খাসজমি উদ্ধারকে সর্বোচ্চ অগ্রাধিকার দেওয়া হয়েছে।</p>
-            <p>মন্ত্রী আরও জানান, দীর্ঘদিন ধরে কোনো এলাকায় বসবাসরত দরিদ্র পরিবারগুলোকে জেলা প্রশাসকের মাধ্যমে আইনি প্রক্রিয়ায় খাসজমি বন্দোবস্ত দেওয়া হবে। প্রয়োজনে প্রতিটি পরিবারকে এক থেকে দুই কাঠা পর্যন্ত জমি দেওয়ার বিষয়টি সরকারের বিবেচনায় রয়েছে।</p>
-            <p>অতীতে কিছু কর্মকর্তার গাফিলতি এবং স্থানীয় প্রভাবশালী ভূমিদস্যুদের কারণে অনেক জমি বেহাত হয়েছে উল্লেখ করে মন্ত্রী বলেন, মাঠপর্যায়ে উদ্ধার অভিযান পরিচালনার জন্য জেলা প্রশাসকদের প্রয়োজনীয় অর্থ বরাদ্দ ও নির্দেশনা দেওয়া হয়েছে।</p>
-          </div>
-        </div>
-
-        <!-- কমেন্ট সেকশন -->
-        <div class="d-none tt-white fb-comment mt-3">
-          <h2 class="m-0 p-md-3 p-2">আপনার মতামত লিখুন</h2>
-          <div class="p-md-3 p-2 border"></div>
-        </div> 
-
-        <!-- সম্পর্কিত খবর / আরো পড়ুন... সেকশন -->
-        <div class="related-post mt-5">
-          <div class="row g-3">
-            <div class="col-12">
-  <div class="d-flex align-items-center mb-3" style="width: 100%;">
-    
-    <!-- বাঁকা নীল রঙের ইন্ডিকেটর বক্স -->
-    <span style="background: #273a96; width: 10px; height: 22px; display: inline-block; transform: skewX(-20deg); margin-right: 12px;"></span>
-    
-    <!-- শিরোনাম লেখা -->
-    <h4 class="m-0 fw-bold" style="font-size: 22px; white-space: nowrap; font-family: 'SolaimanLipi', sans-serif;">
-      <a href="javascript:void(0);" class="text-decoration-none text-dark" style="color: #000 !important;">আরো পড়ুন ...</a>
-    </h4>
-    
-    <!-- ডান পাশের চিকন ধূসর রেখা (যা বাকি পুরো জায়গা জুড়ে থাকবে) -->
-    <div style="flex-grow: 1; height: 2px; background-color: #b0b0b0; margin-left: 15px; margin-top: 4px;"></div>
-
-  </div>
-</div>
-            
-           <!-- আইটেম ১ -->
-  <div class="col-md-3 col-6">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835269486240.jpg.pagespeed.ic.ZMdbCznE91.webp" alt="গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা</h6>
-    </a>
-  </div> 
-  
-  <!-- আইটেম ২ -->
-  <div class="col-md-3 col-6">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835265419710.jpg.pagespeed.ic.w-8pWJd68t.webp" alt="বান্দরবানে শতাধিক পর্যকটকে উদ্ধার">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">বান্দরবানে শতাধিক পর্যকটকে উদ্ধার</h6>
-    </a>
-  </div> 
-  
-  <!-- আইটেম ৩ -->
-  <div class="col-md-3 col-6">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835238494428.jpg.pagespeed.ic.ZtpfrvtQoJ.webp" alt="হাসপাতালকে জন্ম-মৃত্যু নিবন্ধন দায়িত্ব দিলে দ্রুত লক্ষ্য অর্জন">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">হাসপাতালকে জন্ম-মৃত্যু নিবন্ধন দায়িত্ব দিলে দ্রুত লক্ষ্য অর্জন</h6>
-    </a>
-  </div> 
-  
-  <!-- আইটেম ৪ -->
-  <div class="col-md-3 col-6">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835230819694.jpg.pagespeed.ic.6iohfGtgd3.webp" alt="টিকেটের টাকা ফেরত, উঁচু হবে রেললাইন">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">টিকেটের টাকা ফেরত, উঁচু হবে রেললাইন</h6>
-    </a>
-  </div> 
-  
-  <!-- আইটেম ৫ -->
-  <div class="col-md-3 col-6 mt-3">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835224745422.jpg.pagespeed.ic._BiR9LFjmu.webp" alt="পরিবেশ দূषण নিয়ে ‘সুখ খবর’ দিলেন পরিবেশমন্ত্রী">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">পরিবেশ দূষণ নিয়ে ‘সুখবর’ দিলেন পরিবেশমন্ত্রী</h6>
-    </a>
-  </div> 
-  
-  <!-- আইটেম ৬ -->
-  <div class="col-md-3 col-6 mt-3">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835160176229.jpg.pagespeed.ic.rLFdTAoNK-.webp" alt="বসুন্ধরা, এস আলমসহ ১০ শিল্পগ্রুপের বিরুদ্ধে মামলা করছে সরকার">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">বসুন্ধরা, এস আলমসহ ১০ শিল্পগ্রুপের বিরুদ্ধে মামলা করছে সরকার</h6>
-    </a>
-  </div> 
-  
-  <!-- আইটেম ৭ -->
-  <div class="col-md-3 col-6 mt-3">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835151617597.jpg.pagespeed.ic.MSir4fsvaN.webp" alt="পাহাড়ধসে ৩ জেলায় প্রাণহানি ১৯, বিচ্ছিন্ন বান্দরবান">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">পাহাড়ধসে ৩ জেলায় প্রাণহানি ১৯, বিচ্ছিন্ন বান্দরবান</h6>
-    </a>
-  </div> 
-  
-  <!-- আইটেম ৮ -->
-  <div class="col-md-3 col-6 mt-3">
-    <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
-      <div class="hover-img-wrap rounded-0">
-        <img class="w-100 ps-post-line-img" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835138644523.jpg.pagespeed.ic.h5AA5aIEnd.webp" alt="নারী শিক্ষায় নতুন উদ্যোগ: অনার্স ফ্রি, স্কলারশিপ">
-      </div> 
-      <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm" style="font-size: 14px; transition: color 0.3s ease;">নারী শিক্ষায় নতুন উদ্যোগ: অনার্স ফ্রি, স্কলারশিপ</h6>
-    </a>
-  </div>     
-          </div>
-        </div>
-      </div>
-
-      <!-- ডান পাশের সাইডবার কলাম (col-lg-3) -->
-      <div class="col-lg-3">
-        <!-- বিজ্ঞাপন ব্যানার -->
-        <div class="tt-white mb-3">
-          <div class="text-center border p-1" style="background-color: #fafafa;">
-            <a href="javascript:void(0);">
-              <img class="img-fluid w-100" src="https://sangbad.net/uploads/xFridge-Aktai-Walton_320-x-100.jpg.jpeg.pagespeed.ic.I0qbV1seV0.webp" alt="Walton Ad">
-            </a>
-          </div>
-        </div>
-
-        <!-- ট্যাবড উইজেট সেকশন -->
-        <div class="sidebar"> 
-          <div class="most-recent mt-2">
-            <input type="radio" name="sidebar-tabs" id="sb-radio-recent" class="sb-tab-radio" checked>
-        <input type="radio" name="sidebar-tabs" id="sb-radio-top10" class="sb-tab-radio">
-        
-        <ul class="sb-tabs-nav">
-          <label for="sb-radio-recent" class="sb-tab-btn-label">সদ্যপ্রাপ্ত</label>
-          <label for="sb-radio-top10" class="sb-tab-btn-label">শীর্ষ ১০</label>
-        </ul>
-        
-        <div class="sb-tab-content-window">
-          <!-- TAB PANEL 1: Recent Feeds Module List -->
-          <div class="sb-tab-panel" id="sb-panel-recent">
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834416767446.jpg.pagespeed.ic.9erCF7zFh1.webp" alt="মিশর বনাম আর্জেন্টিনা"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">ইব্রাহিমের গোলে এগিয়ে মিশর, পেনাল্টি মিসে হতাশ মেসি</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834402283251.jpg.pagespeed.ic.ob5Q0SZrZ9.webp" alt="মাদ্রাসায় নির্যাতন"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">শিশুর পায়ে শিকল, মাদ্রাসায় নির্যাতনের নতুন ঘটনা</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834394318500.jpg.pagespeed.ic.FCBbC1-K_h.webp" alt="বিল পাস"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">প্রশ্ন ফাঁসের সাজা কমিয়ে ৫ বছর, বিল পাস</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834401812120.jpg.pagespeed.ic.bGBu1q0ZRj.webp" alt="বেলজিয়াম"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">যুক্তরাষ্ট্রকে হারিয়ে বেলজিয়ামের কড়া বার্তা: ইনফান্তিনোর ভূমিকায় তদন্তের দাবি</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834393508870.jpg.pagespeed.ic.2Pp7LEMCod.webp" alt="মেসি"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">মেসির জাদুকরী স্মৃতির মিশরেই নতুন রেকর্ডের হাতছানি</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834384039657.jpg.pagespeed.ic.w0q8Hgd9dO.webp" alt="বগুড়া"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">২৫ বছর অপেক্ষার পর বগুড়ায় প্রথম বিশ্ববিদ্যালয়</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834375904072.jpg.pagespeed.ic.D12H4P3oKZ.webp" alt="এইচএসসি"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">এইচএসসি পরীক্ষা কেন্দ্রের জন্য জরুরি নির্দেশনা</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834389574543.jpg.pagespeed.ic.t1T0WU13El.webp" alt="স্কালোনি"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">মিশরের বিপক্ষে স্কালোনির একাদশে তিন বড় বদল</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834371767161.jpg.pagespeed.ic.YcRQ7dsWkl.webp" alt="মামলাজট"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">মামলাজট কমাতে সরকারের বিশেষ উদ্যোগ</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834370595859.jpg.pagespeed.ic.gVHPLuxnob.webp" alt="সাজেক"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">অনির্দিষ্টকালের জন্য সাজেক ভ্রমণে নিষেধাজ্ঞা</h4></div>
-              </div>
-            </a>
-          </div>
-          
-          <!-- TAB PANEL 2: Top 10 Feeds Module List -->
-          <div class="sb-tab-panel" id="sb-panel-top10">
-           <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833604206128.jpg.pagespeed.ic.pUdlrL4BH6.webp" alt="সাভার"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">সাভারে এনসিপির সমাবেশে বিস্ফোরণ, আহত ৪</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833608642354.jpg.pagespeed.ic.yT5XqBmX8c.webp" alt="সমাবেশ"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">সমাবেশে হামলার পেছনে রাজনৈতিক উদ্দেশ্য: নাহিদ ইসলাম</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834125557196.jpg.pagespeed.ic.Ee_oM7g-u6.webp" alt="মানিকগঞ্জ"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">মানিকগঞ্জে গৃহবধূর রহস্যজনক মৃত্যু, স্বামী আটক</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833638775430.jpg.pagespeed.ic.U8krQJKiqs.webp" alt="বিস্ফোরণ"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">সাভারে বিস্ফোরণের আগে ‘বিদ্যুৎ উধাও’, সন্দেহে তদন্ত কমিটি</h4></div>
-              </div>
-            </a>
-            
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833916559329.jpg.pagespeed.ic.ryqT9RyACV.webp" alt="মাহফুজ আলম"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">‘খেলা শেষ, খোদা হাফেজ’, সাবেক তথ্য উপদেষ্টা মাহফুজ আলম</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834102525218.jpg.pagespeed.ic.RFgBA4lFG1.webp" alt="মহড়া"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">সেনাবাহিনীর গ্রীষ্মকালীন মহড়া পরিদর্শন করলেন প্রধানমন্ত্রী</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833565679501.jpg.pagespeed.ic.TkCaQavlfP.webp" alt="বাহিনী"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">৪১ জনের ‘পাপে ধুঁকছে’ গোটা বাহিনী</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834026098012.jpg.pagespeed.ic.u0Iwq1yDdA.webp" alt="নতুন বই"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">​ডিসেম্বরেই নতুন বই পাবে শিক্ষার্থীরা: শিক্ষামন্ত্রী</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834095814228.jpg.pagespeed.ic.owok5F3D3M.webp" alt="মৃত্যু"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">কালকিনিতে সাপের কামড়ে গৃহবধূর মৃত্যু</h4></div>
-              </div>
-            </a>
-
-            <a href="#" class="sb-side-item">
-              <div class="sb-card-flex">
-                <div class="sb-card-img-wrap"><img class="sb-img-fluid" src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833570733513.jpg.pagespeed.ic.uZ5NhXUQh-.webp" alt="ব্রাজিল"></div>
-                <div class="sb-card-text"><h4 class="sb-card-title">শেষ হলো নেইমারদের সোনালী প্রজন্ম, এবার কোন পথে ব্রাজিল?</h4></div>
-              </div>
-            </a>
-          </div>
-        </div>
-          </div>
-        </div>
-
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<footer class="techtaranga_footer_5 techtaranga_footer" style="font-family: 'NesarAJ', Arial, sans-serif; background-color: rgb(234, 244, 254); color: rgb(33, 37, 41);">
-  
-  <!-- ফুটার টপ: লোগো এবং পাবলিশার প্যানেল -->
-  <div class="footer_top pt-5 pb-3">
-    <div class="container" style="max-width: 1246px;">
-      <div class="row align-items-center">
-        
-        <div class="col-md-12 text-center mb-4">
-  <div class="flogo-light flogo">
-    <img class="image-switchable" src="https://sangbad.net/uploads/Sangbad.png" style="height: 40px; width: auto;" alt="সংবাদ">
-  </div>
-</div>
-        
-        <!-- সম্পাদক ও নির্বাহী প্যানেল -->
-        <div class="col-md-12 text-center">
-          <div class="techtaranga_footer_publisher">
-            <div class="row my-2 justify-content-center">
-              <div class="col-lg-4 text-center mb-3 mb-lg-0">
-                <h4 style="font-size: 18px; font-weight: 600; line-height: 26px; color: rgb(33, 37, 41);">
-                  সম্পাদক ও প্রকাশক <br> <span style="font-weight: 700;">আলতামাশ কবির</span>
-                </h4>
-              </div>
-              <div class="col-lg-4 text-center mb-3 mb-lg-0">
-                <h4 style="font-size: 18px; font-weight: 600; line-height: 26px; color: rgb(33, 37, 41);">
-                  নিবন্ধক ও নির্বাহী সম্পাদক<br> <span style="font-weight: 700;">শাহরিয়ার করিম</span>
-                </h4>
-              </div>
-              <div class="col-lg-4 text-center">
-                <h4 style="font-size: 18px; font-weight: 600; line-height: 26px; color: rgb(33, 37, 41);">
-                  প্রধান, ডিজিটাল সংস্করণ <br> <span style="font-weight: 700;">রাশেদ আহমেদ</span>
-                </h4>
-              </div>
-            </div> 
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ফুটার মিডেল: সোশ্যাল আইকন, অ্যাপ ডাউনলোড ও সেকেন্ডারি মেনু -->
-  <div class="footer_middle pb-4">
-    <div class="container" style="max-width: 1246px;">
-      <div class="row align-items-center">
-        <div class="col-md-12 text-center">
-          
-          <!-- সোশ্যাল মিডিয়া আইকনসমূহ (বর্ডার স্কয়ার ফরম্যাট) -->
-          <div class="techtaranga_social_menu mb-3">
-  <span class="social-box facebook"><i class="fa-brands fa-facebook-f"></i></span>
-  <span class="social-box linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
-  <span class="social-box instagram"><i class="fa-brands fa-instagram"></i></span>
-  <span class="social-box youtube"><i class="fa-brands fa-youtube"></i></span>
-</div>
-
-          <!-- অ্যাপ ডাউনলোড বাটনসমূহ -->
-          <div class="footer_download_app mb-4">
-            <img src="https://sangbad.net/assets/image/xgoogle-play-download.png.pagespeed.ic.DXmbKRV_OE.webp" alt="Google Play" style="height: 40px; margin: 0 5px; cursor: pointer;">
-            <img src="https://sangbad.net/assets/image/xapp-store-btn.png.pagespeed.ic.8m0H9gTLjL.webp" alt="App Store" style="height: 40px; margin: 0 5px; cursor: pointer;">
-          </div>
-
-          <!-- সেকেন্ডারি মেনু (ইনলাইন পাইপ সেপারেটর সহ) -->
-          <ul class="secondary_menu_tt list-unstyled d-flex justify-content-center flex-wrap" style="font-size: 15px; font-weight: 500;">
-            <li class="nav-item">About Us</li>
-            <li class="nav-item">Contact Us</li>
-            <li class="nav-item">Terms And Condition</li>
-            <li class="nav-item">Privacy Policy</li>
-            <li class="nav-item">Advertisement</li>
-            <li class="nav-item">Career</li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- ফুটার বটম: কপিরাইট সেকশন -->
-  <div class="footer_bottom py-3" style="background-color: #243e8b; color: #ffffff;">
-    <div class="container" style="max-width: 1246px;">
+      <!-- ক্যাটাগরি বা ব্রেডক্রাম্ব (দ্বিতীয় ছবির মতো নিচে লাল বর্ডার) -->
       <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="tt_element_inner d-flex justify-content-center align-items-center flex-wrap gap-2" style="font-size: 14px; letter-spacing: 0.5px;">
-            <div class="techtaranga_footer_cpt">
-              <b>২০২৬ সংবাদ কর্তৃক সর্বস্বত্ব স্বত্বাধিকার সংরক্ষিত</b>
+        <div class="col-12">
+          <h6 class="text-danger fw-bold mb-3 d-inline-block pb-1"
+            style="font-size: 22px; border-bottom: 2px solid #dc3545;">জাতীয়</h6>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- বাম পাশের মূল কন্টেন্ট কলাম -->
+        <div class="col-lg-9">
+          <div>
+            <!-- মেইন নিউজ টাইটেল (ফন্ট সাইজ ও ওয়েট বৃদ্ধি করা হয়েছে) -->
+            <h1 class="m-0 mb-4 fw-black text-dark"
+              style="font-size: 36px; font-weight: 800; line-height: 1.3; letter-spacing: -0.5px;">গ্রামে বিদ্যুৎ সংকট
+              নিয়ে বিব্রত সংসদ সদস্যরা</h1>
+
+            <!-- রিপোর্টার ইনফো এবং শেয়ার বাটন রো -->
+            <div class="row g-3 align-items-center mb-3">
+              <!-- রিপোর্টার অংশ -->
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center">
+                  <a href="javascript:void(0);">
+                    <img class="rounded-0" height="45px" width="auto"
+                      src="data:image/webp;base64,UklGRgQEAABXRUJQVlA4TPcDAAAvTUAMEFXIwrbNzKO3Tte2d/8aa9u2bdu2WRyubdu2bdtWcdQkM5NkcfhNEiGJtm1Dkl6wbNu2bbtmWbZt23b1yLZt27ZtdyQi4k8A8T0uf1xJyuNaxw1s+7jZcXvHOe543Jdoj9+EmAmxRBMEE9Jte0LBhHIpJ9RO6CDq3VV+gqj8ZPml5ZfZdvlN5bfZdvn95Y9JmesMrhPhJp6XX1d9efV9RClPKucdR7mm3Ldt5bHygUj5qPxXGCKIHMeBGBIpwYJzHAfIyOWP4TmQpf6/SXIpzWFwloLrgCP6w4oK78RPAQ5e45VA/GQDk+t43zwAET2TiQ5vOJX0Pnhey0JjCIE1e1kgbtN0QS0eA2h+JwfWc5LhR3/jAP61e1jw5okU6d1lATEnsKtCTRKDpb/NSYYei8HNQc2GeYFdGWaSNQHgOcnAE3GYOZ7KKO94gVsRpiuGOGo2Kfk9bhAquYaXdJ3W+IRtsR1QUnADXgHJ8LXvSV5ZnvzCGGYLdOBD4KkiG4usLrJLuQ9OA/yScAC9ITc796vMv839E3gg1bBdb2U4uR4T4wUt/EkANtv5XvU7bL7RACL6Qew1adONbyrSdaFvfd7d3l/AAekNP/payRCU6ziQxM+KSzY7/MIBOs/pBu5W4Zj24nFNQ3Stc/vRqf+oDjG+oIPXcZIpbh8zMMJ9jcO6xL7Mj5dM/uSohQE4XlRdFB16hJtM9uaYo9HisHX2ZZbjD5DIJF/meBtrrUf4TkiABONX8mOchhTkW/1AjsNqr6A94KThXXfUJubIHKcvGTLEY2sCAveBlSZ0XVI7ZgIGyOt7w7YLajouq47KyXwBrDSlBhXYBiSlU2j1pLRttve176vdM5jrPao8dIf7DyCzam1yhwgoIXj8wy+IpZm1YrHiy1RMr0UXddw/WwsNyrGYGDx4l7XQKR18MhB++R1pPzAmdVfotvBB5ZkuCKGpSWAN4vm1/JqopCcKANVXVIllTK7Duqj2tBEgynNkbOYzZdJ5W8PrD4vrkL4XMnnOClPe1hk6YPkDA+jPc1AIHTbxfScEXIaLYzOeyRFz7VExNCvcneEHccDOZcG/ceI4sUIQtawAz8mNqbJypT2Ab0SWqBi84jwX/K02d8IYwDsiWRS9pAJ2s+F7jeHTOgD+EYnC6JVc4FmGxJ9ad53VAIg0AN1SS3pdT5IXveofqwDEMkAUcCQilgcd0Qo4pQY+zc0+eY/lSLQu3zf1R49Y/8QAfF/KV5nx+A8kIcpzICLmKwUQHxGi4YQem5TyUg4g8JjFmKKBldvsyJAnrcAm8HnXfPSgbQwGsMSr8m4/gdwkmY/PEjyXAVhm2lP1xzZYA5gBAA=="
+                      alt="নিজস্ব বার্তা পরিবেশক">
+                  </a>
+                  <div class="ms-2">
+                    <a href="javascript:void(0);" class="text-dark text-decoration-none">
+                      <h5 class="m-0 h5 fw-bold" style="font-size: 18px; line-height: 1.2;">নিজস্ব বার্তা পরিবেশক</h5>
+                    </a>
+                    <span class="text-muted" style="font-size: 13px;">
+                      <i class="bi bi-clock"></i> প্রকাশ: ৮ জুলাই ২০২৬, ১০:০৬ পিএম
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- সোশ্যাল শেয়ার বাটন -->
+              <div class="col-12 col-md-6 text-md-end">
+                <div class="d-inline-flex align-items-center gap-1">
+                  <!-- কাউন্টার টেক্সট -->
+                  <div class="text-center me-2" style="line-height: 1.1;">
+                    <span class="d-block fw-bold text-dark" style="font-size: 14px;">3</span>
+                    <span class="text-muted" style="font-size: 10px;">Shares</span>
+                  </div>
+                  <!-- ফেসবুক -->
+                  <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border"
+                    style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
+                    <i class="bi bi-facebook" style="font-size: 12px;"></i>
+                  </a>
+                  <!-- মেসেঞ্জার -->
+                  <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border"
+                    style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
+                    <i class="bi bi-messenger" style="font-size: 12px;"></i>
+                  </a>
+                  <!-- এক্স / টুইটার -->
+                  <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border"
+                    style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
+                    <i class="bi bi-twitter-x" style="font-size: 12px;"></i>
+                  </a>
+                  <!-- হোয়াটসঅ্যাপ -->
+                  <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border"
+                    style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
+                    <i class="bi bi-whatsapp" style="font-size: 12px;"></i>
+                  </a>
+                  <!-- প্রিন্ট -->
+                  
+                  <a href="javascript:void(0);" onclick="window.print(); return false;"
+                    class="btn p-0 d-flex align-items-center justify-content-center border"
+                    style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;" title="Print Page">
+                    <i class="bi bi-printer" style="font-size: 12px;"></i>
+                  </a>
+
+                  
+                  <script>
+                    document.getElementById('print-date').innerText = new Date().toLocaleDateString();
+                  </script>
+                  <!-- কপি লিংক -->
+                  <a href="javascript:void(0);" class="btn p-0 d-flex align-items-center justify-content-center border"
+                    style="width: 28px; height: 28px; background-color: #f8f9fa; color: #495057;">
+                    <i class="bi bi-copy" style="font-size: 12px;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-3">
+
+            <!-- আর্টিকেলের ফিচার্ড ইমেজ -->
+            <div class="story-image popup-gallery mb-2">
+              <a title="গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা" href="javascript:void(0);">
+                <img class="w-100 rounded-0"
+                  src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835269486240.jpg.pagespeed.ic.ZMdbCznE91.webp"
+                  alt="গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা">
+              </a>
+            </div>
+
+            <!-- ইমেজের ক্যাপশন বা ফুটার নোট -->
+            <div class="p-2 py-1 text-center" style="background:#f8f9fa; border-top: 1px solid #dee2e6;">
+              <h6 class="m-0 text-muted" style="font-size: 13px;">জামালপুর-৩ আসনের সংসদ সদস্য মোস্তাফিজুর রহমান বাবুল
+              </h6>
+            </div>
+
+            <!-- মেইন নিউজ ডিটেইলস (প্যারাগ্রাফসমূহ) -->
+            <div class="story-details tt-text mt-4 text-justify"
+              style="line-height: 1.8; font-size: 17px; color: #212529;">
+              <p>গ্রামাঞ্চলে বিদ্যুতের চরম লোডশেডিং নিয়ে জাতীয় সংসদে ক্ষোভ ও অস্বস্তি প্রকাশ করেছেন সরকারদলীয় সংসদ
+                সদস্য মোস্তাফিজুর রহমান বাবুল। তিনি বলেছেন, বিদ্যুৎ এখন গ্রামে একটি বড় ইস্যু হয়ে দাঁড়িয়েছে এবং
+                নির্বাচনী এলাকায় গেলে এই সমস্যার কারণে সাধারণ মানুষের মুখোমুখি হতে তারা বিব্রতবোধ করছেন।</p>
+              <p>বুধবার (৮ জুলাই) স্পিকার হাফিজ উদ্দিন আহমদের সভাপতিত্বে সংসদ অধিবেশনে প্রশ্নোত্তর পর্বে তিনি এ কথা
+                বলেন। একই অধিবেশনে ভূমিমন্ত্রী মিজানুর রহমান মিনু জানিয়েছেন, সরকারি খাসজমি অবৈধ দখলমুক্ত করতে সরকার সব
+                ধরনের কঠোর ব্যবস্থা গ্রহণ করবে।</p>
+              <p>সম্পূরক প্রশ্নের সুযোগ নিয়ে সংসদ সদস্য মোস্তাফিজুর রহমান বাবুল বলেন, ‘গ্রামে-গঞ্জে বিদ্যুৎ এখন সবচেয়ে
+                বড় ইস্যু। আমরা যখন গ্রামে যাই, এই সমস্যা আমাদের বিব্রত করে, অস্বস্তিতে ফেলে।’</p>
+              <p>তিনি নিজের নির্বাচনী এলাকা মেলান্দহ ও মাদারগঞ্জ উপজেলার উদাহরণ টেনে জানান, পিক আওয়ারে সেখানে বিদ্যুতের
+                চাহিদা ৪৩ মেগাওয়াট হলেও সরবরাহ পাওয়া যাচ্ছে মাত্র ২৭ মেগাওয়াট। অফ-পিক সময়েও চাহিদার তুলনায় সরবরাহ
+                অনেক কম। ফলে গড়ে ৩৪ থেকে ৩৮ শতাংশ লোডশেডিং করতে হচ্ছে। এই পরিস্থিতি থেকে কবে নাগাদ উত্তরণ সম্ভব হবে, সে
+                বিষয়ে তিনি বিদ্যুৎমন্ত্রীর কাছে সুনির্দিষ্ট ব্যাখ্যা চান。</p>
+              <p>জবাবে বিদ্যুৎমন্ত্রী ইকবাল হাসান মাহমুদ টুকু ট্রান্সমিশন লাইনের সমস্যার কথা উল্লেখ করেন। তিনি বলেন,
+                ‘ময়মনসিংহ অঞ্চলে বিদ্যুৎ সংকটের মূল কারণ হলো সঞ্চালন লাইনের সীমাবদ্ধতা। এ সমস্যা সমাধানে নতুন传输 প্রকল্প
+                হাতে নেওয়া হয়েছে। তবে বড় আকারের টাওয়ার নির্মাণের জন্য জমি অধিগ্রহণে আইনি জটিলতার কারণে কাজ বিলম্বিত
+                হয়েছে। ভালুকা এলাকায় জমি সংক্রান্ত একটি মামলায় সরকার জয়ী হলেও কাজ পুরোপুরি শুরু করা সম্ভব হয়নি।’
+              </p>
+              <p>তবে স্থানীয় সংসদ সদস্যদের সহযোগিতায় দ্রুত কাজ শেষ করে ওই অঞ্চলের বিদ্যুৎ সংকট কমানোর आश्वासन দেন
+                মন্ত্রী।</p>
+              <p>সংসদ সদস্য মোহাম্মদ নুরুল ইসলামের একটি জনগুরুত্বসম্পন্ন নোটিশের জবাবে ভূমিমন্ত্রী মিজানুর রহমান মিনু
+                বলেন, ভূমিদস্যুদের কবল থেকে সরকারি খাসজমি উদ্ধার করে প্রকৃত ভূমিহীনদের মধ্যে তা বিতরণে সরকার বদ্ধপরিকর।
+                তিনি জানান, সরকারের ১৮০ দিনের বিশেষ কর্মসূচিতে খাসজমি উদ্ধারকে সর্বোচ্চ অগ্রাধিকার দেওয়া হয়েছে।</p>
+              <p>মন্ত্রী আরও জানান, দীর্ঘদিন ধরে কোনো এলাকায় বসবাসরত দরিদ্র পরিবারগুলোকে জেলা প্রশাসকের মাধ্যমে আইনি
+                প্রক্রিয়ায় খাসজমি বন্দোবস্ত দেওয়া হবে। প্রয়োজনে প্রতিটি পরিবারকে এক থেকে দুই কাঠা পর্যন্ত জমি
+                দেওয়ার বিষয়টি সরকারের বিবেচনায় রয়েছে।</p>
+              <p>অতীতে কিছু কর্মকর্তার গাফিলতি এবং স্থানীয় প্রভাবশালী ভূমিদস্যুদের কারণে অনেক জমি বেহাত হয়েছে উল্লেখ
+                করে মন্ত্রী বলেন, মাঠপর্যায়ে উদ্ধার অভিযান পরিচালনার জন্য জেলা প্রশাসকদের প্রয়োজনীয় অর্থ বরাদ্দ ও
+                নির্দেশনা দেওয়া হয়েছে।</p>
+            </div>
+          </div>
+
+          <!-- কমেন্ট সেকশন -->
+          <div class="d-none tt-white fb-comment mt-3">
+            <h2 class="m-0 p-md-3 p-2">আপনার মতামত লিখুন</h2>
+            <div class="p-md-3 p-2 border"></div>
+          </div>
+
+          <!-- সম্পর্কিত খবর / আরো পড়ুন... সেকশন -->
+          <div class="related-post mt-5">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="d-flex align-items-center mb-3" style="width: 100%;">
+
+                  <!-- বাঁকা নীল রঙের ইন্ডিকেটর বক্স -->
+                  <span
+                    style="background: #273a96; width: 10px; height: 22px; display: inline-block; transform: skewX(-20deg); margin-right: 12px;"></span>
+
+                  <!-- শিরোনাম লেখা -->
+                  <h4 class="m-0 fw-bold"
+                    style="font-size: 22px; white-space: nowrap; font-family: 'SolaimanLipi', sans-serif;">
+                    <a href="javascript:void(0);" class="text-decoration-none text-dark"
+                      style="color: #000 !important;">আরো পড়ুন ...</a>
+                  </h4>
+
+                  <!-- ডান পাশের চিকন ধূসর রেখা (যা বাকি পুরো জায়গা জুড়ে থাকবে) -->
+                  <div
+                    style="flex-grow: 1; height: 2px; background-color: #b0b0b0; margin-left: 15px; margin-top: 4px;">
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- আইটেম ১ -->
+              <div class="col-md-3 col-6">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835269486240.jpg.pagespeed.ic.ZMdbCznE91.webp"
+                      alt="গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">গ্রামে বিদ্যুৎ সংকট নিয়ে বিব্রত সংসদ সদস্যরা
+                  </h6>
+                </a>
+              </div>
+
+              <!-- আইটেম ২ -->
+              <div class="col-md-3 col-6">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835265419710.jpg.pagespeed.ic.w-8pWJd68t.webp"
+                      alt="বান্দরবানে শতাধিক পর্যকটকে উদ্ধার">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">বান্দরবানে শতাধিক পর্যকটকে উদ্ধার</h6>
+                </a>
+              </div>
+
+              <!-- আইটেম ৩ -->
+              <div class="col-md-3 col-6">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835238494428.jpg.pagespeed.ic.ZtpfrvtQoJ.webp"
+                      alt="হাসপাতালকে জন্ম-মৃত্যু নিবন্ধন দায়িত্ব দিলে দ্রুত লক্ষ্য অর্জন">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">হাসপাতালকে জন্ম-মৃত্যু নিবন্ধন দায়িত্ব দিলে
+                    দ্রুত লক্ষ্য অর্জন</h6>
+                </a>
+              </div>
+
+              <!-- আইটেম ৪ -->
+              <div class="col-md-3 col-6">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835230819694.jpg.pagespeed.ic.6iohfGtgd3.webp"
+                      alt="টিকেটের টাকা ফেরত, উঁচু হবে রেললাইন">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">টিকেটের টাকা ফেরত, উঁচু হবে রেললাইন</h6>
+                </a>
+              </div>
+
+              <!-- আইটেম ৫ -->
+              <div class="col-md-3 col-6 mt-3">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835224745422.jpg.pagespeed.ic._BiR9LFjmu.webp"
+                      alt="পরিবেশ দূषण নিয়ে ‘সুখ খবর’ দিলেন পরিবেশমন্ত্রী">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">পরিবেশ দূষণ নিয়ে ‘সুখবর’ দিলেন পরিবেশমন্ত্রী
+                  </h6>
+                </a>
+              </div>
+
+              <!-- আইটেম ৬ -->
+              <div class="col-md-3 col-6 mt-3">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835160176229.jpg.pagespeed.ic.rLFdTAoNK-.webp"
+                      alt="বসুন্ধরা, এস আলমসহ ১০ শিল্পগ্রুপের বিরুদ্ধে মামলা করছে সরকার">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">বসুন্ধরা, এস আলমসহ ১০ শিল্পগ্রুপের বিরুদ্ধে
+                    মামলা করছে সরকার</h6>
+                </a>
+              </div>
+
+              <!-- আইটেম ৭ -->
+              <div class="col-md-3 col-6 mt-3">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835151617597.jpg.pagespeed.ic.MSir4fsvaN.webp"
+                      alt="পাহাড়ধসে ৩ জেলায় প্রাণহানি ১৯, বিচ্ছিন্ন বান্দরবান">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">পাহাড়ধসে ৩ জেলায় প্রাণহানি ১৯, বিচ্ছিন্ন
+                    বান্দরবান</h6>
+                </a>
+              </div>
+
+              <!-- আইটেম ৮ -->
+              <div class="col-md-3 col-6 mt-3">
+                <a href="javascript:void(0);" class="d-block prothom-songbad-post-style text-decoration-none py-1">
+                  <div class="hover-img-wrap rounded-0">
+                    <img class="w-100 ps-post-line-img"
+                      src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17835138644523.jpg.pagespeed.ic.h5AA5aIEnd.webp"
+                      alt="নারী শিক্ষায় নতুন উদ্যোগ: অনার্স ফ্রি, স্কলারশিপ">
+                  </div>
+                  <h6 class="news-title-4 mt-2 fw-bold text-dark text-start lh-sm"
+                    style="font-size: 14px; transition: color 0.3s ease;">নারী শিক্ষায় নতুন উদ্যোগ: অনার্স ফ্রি,
+                    স্কলারশিপ</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ডান পাশের সাইডবার কলাম (col-lg-3) -->
+        <div class="col-lg-3">
+          <!-- বিজ্ঞাপন ব্যানার -->
+          <div class="tt-white mb-3">
+            <div class="text-center border p-1" style="background-color: #fafafa;">
+              <a href="javascript:void(0);">
+                <img class="img-fluid w-100"
+                  src="https://sangbad.net/uploads/xFridge-Aktai-Walton_320-x-100.jpg.jpeg.pagespeed.ic.I0qbV1seV0.webp"
+                  alt="Walton Ad">
+              </a>
+            </div>
+          </div>
+
+          <!-- ট্যাবড উইজেট সেকশন -->
+          <div class="sidebar">
+            <div class="most-recent mt-2">
+              <input type="radio" name="sidebar-tabs" id="sb-radio-recent" class="sb-tab-radio" checked>
+              <input type="radio" name="sidebar-tabs" id="sb-radio-top10" class="sb-tab-radio">
+
+              <ul class="sb-tabs-nav">
+                <label for="sb-radio-recent" class="sb-tab-btn-label">সদ্যপ্রাপ্ত</label>
+                <label for="sb-radio-top10" class="sb-tab-btn-label">শীর্ষ ১০</label>
+              </ul>
+
+              <div class="sb-tab-content-window">
+                <!-- TAB PANEL 1: Recent Feeds Module List -->
+                <div class="sb-tab-panel" id="sb-panel-recent">
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834416767446.jpg.pagespeed.ic.9erCF7zFh1.webp"
+                          alt="মিশর বনাম আর্জেন্টিনা"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">ইব্রাহিমের গোলে এগিয়ে মিশর, পেনাল্টি মিসে হতাশ মেসি</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834402283251.jpg.pagespeed.ic.ob5Q0SZrZ9.webp"
+                          alt="মাদ্রাসায় নির্যাতন"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">শিশুর পায়ে শিকল, মাদ্রাসায় নির্যাতনের নতুন ঘটনা</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834394318500.jpg.pagespeed.ic.FCBbC1-K_h.webp"
+                          alt="বিল পাস"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">প্রশ্ন ফাঁসের সাজা কমিয়ে ৫ বছর, বিল পাস</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834401812120.jpg.pagespeed.ic.bGBu1q0ZRj.webp"
+                          alt="বেলজিয়াম"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">যুক্তরাষ্ট্রকে হারিয়ে বেলজিয়ামের কড়া বার্তা: ইনফান্তিনোর ভূমিকায়
+                          তদন্তের দাবি</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834393508870.jpg.pagespeed.ic.2Pp7LEMCod.webp"
+                          alt="মেসি"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">মেসির জাদুকরী স্মৃতির মিশরেই নতুন রেকর্ডের হাতছানি</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834384039657.jpg.pagespeed.ic.w0q8Hgd9dO.webp"
+                          alt="বগুড়া"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">২৫ বছর অপেক্ষার পর বগুড়ায় প্রথম বিশ্ববিদ্যালয়</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834375904072.jpg.pagespeed.ic.D12H4P3oKZ.webp"
+                          alt="এইচএসসি"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">এইচএসসি পরীক্ষা কেন্দ্রের জন্য জরুরি নির্দেশনা</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834389574543.jpg.pagespeed.ic.t1T0WU13El.webp"
+                          alt="স্কালোনি"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">মিশরের বিপক্ষে স্কালোনির একাদশে তিন বড় বদল</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834371767161.jpg.pagespeed.ic.YcRQ7dsWkl.webp"
+                          alt="মামলাজট"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">মামলাজট কমাতে সরকারের বিশেষ উদ্যোগ</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834370595859.jpg.pagespeed.ic.gVHPLuxnob.webp"
+                          alt="সাজেক"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">অনির্দিষ্টকালের জন্য সাজেক ভ্রমণে নিষেধাজ্ঞা</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- TAB PANEL 2: Top 10 Feeds Module List -->
+                <div class="sb-tab-panel" id="sb-panel-top10">
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833604206128.jpg.pagespeed.ic.pUdlrL4BH6.webp"
+                          alt="সাভার"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">সাভারে এনসিপির সমাবেশে বিস্ফোরণ, আহত ৪</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833608642354.jpg.pagespeed.ic.yT5XqBmX8c.webp"
+                          alt="সমাবেশ"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">সমাবেশে হামলার পেছনে রাজনৈতিক উদ্দেশ্য: নাহিদ ইসলাম</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834125557196.jpg.pagespeed.ic.Ee_oM7g-u6.webp"
+                          alt="মানিকগঞ্জ"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">মানিকগঞ্জে গৃহবধূর রহস্যজনক মৃত্যু, স্বামী আটক</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833638775430.jpg.pagespeed.ic.U8krQJKiqs.webp"
+                          alt="বিস্ফোরণ"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">সাভারে বিস্ফোরণের আগে ‘বিদ্যুৎ উধাও’, সন্দেহে তদন্ত কমিটি</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833916559329.jpg.pagespeed.ic.ryqT9RyACV.webp"
+                          alt="মাহফুজ আলম"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">‘খেলা শেষ, খোদা হাফেজ’, সাবেক তথ্য উপদেষ্টা মাহফুজ আলম</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834102525218.jpg.pagespeed.ic.RFgBA4lFG1.webp"
+                          alt="মহড়া"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">সেনাবাহিনীর গ্রীষ্মকালীন মহড়া পরিদর্শন করলেন প্রধানমন্ত্রী</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833565679501.jpg.pagespeed.ic.TkCaQavlfP.webp"
+                          alt="বাহিনী"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">৪১ জনের ‘পাপে ধুঁকছে’ গোটা বাহিনী</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834026098012.jpg.pagespeed.ic.u0Iwq1yDdA.webp"
+                          alt="নতুন বই"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">​ডিসেম্বরেই নতুন বই পাবে শিক্ষার্থীরা: শিক্ষামন্ত্রী</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17834095814228.jpg.pagespeed.ic.owok5F3D3M.webp"
+                          alt="মৃত্যু"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">কালকিনিতে সাপের কামড়ে গৃহবধূর মৃত্যু</h4>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#" class="sb-side-item">
+                    <div class="sb-card-flex">
+                      <div class="sb-card-img-wrap"><img class="sb-img-fluid"
+                          src="https://sangbad.net/uploads/2026/07/xTechtaranga.com_17833570733513.jpg.pagespeed.ic.uZ5NhXUQh-.webp"
+                          alt="ব্রাজিল"></div>
+                      <div class="sb-card-text">
+                        <h4 class="sb-card-title">শেষ হলো নেইমারদের সোনালী প্রজন্ম, এবার কোন পথে ব্রাজিল?</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="techtaranga_footer_5 techtaranga_footer"
+    style="font-family: 'NesarAJ', Arial, sans-serif; background-color: rgb(234, 244, 254); color: rgb(33, 37, 41);">
+
+    <!-- ফুটার টপ: লোগো এবং পাবলিশার প্যানেল -->
+    <div class="footer_top pt-5 pb-3">
+      <div class="container" style="max-width: 1246px;">
+        <div class="row align-items-center">
+
+          <div class="col-md-12 text-center mb-4">
+            <div class="flogo-light flogo">
+              <img class="image-switchable" src="https://sangbad.net/uploads/Sangbad.png"
+                style="height: 40px; width: auto;" alt="সংবাদ">
+            </div>
+          </div>
+
+          <!-- সম্পাদক ও নির্বাহী প্যানেল -->
+          <div class="col-md-12 text-center">
+            <div class="techtaranga_footer_publisher">
+              <div class="row my-2 justify-content-center">
+                <div class="col-lg-4 text-center mb-3 mb-lg-0">
+                  <h4 style="font-size: 18px; font-weight: 600; line-height: 26px; color: rgb(33, 37, 41);">
+                    সম্পাদক ও প্রকাশক <br> <span style="font-weight: 700;">আলতামাশ কবির</span>
+                  </h4>
+                </div>
+                <div class="col-lg-4 text-center mb-3 mb-lg-0">
+                  <h4 style="font-size: 18px; font-weight: 600; line-height: 26px; color: rgb(33, 37, 41);">
+                    নিবন্ধক ও নির্বাহী সম্পাদক<br> <span style="font-weight: 700;">শাহরিয়ার করিম</span>
+                  </h4>
+                </div>
+                <div class="col-lg-4 text-center">
+                  <h4 style="font-size: 18px; font-weight: 600; line-height: 26px; color: rgb(33, 37, 41);">
+                    প্রধান, ডিজিটাল সংস্করণ <br> <span style="font-weight: 700;">রাশেদ আহমেদ</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ফুটার মিডেল: সোশ্যাল আইকন, অ্যাপ ডাউনলোড ও সেকেন্ডারি মেনু -->
+    <div class="footer_middle pb-4">
+      <div class="container" style="max-width: 1246px;">
+        <div class="row align-items-center">
+          <div class="col-md-12 text-center">
+
+            <!-- সোশ্যাল মিডিয়া আইকনসমূহ (বর্ডার স্কয়ার ফরম্যাট) -->
+            <div class="techtaranga_social_menu mb-3">
+              <span class="social-box facebook"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="social-box linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span class="social-box instagram"><i class="fa-brands fa-instagram"></i></span>
+              <span class="social-box youtube"><i class="fa-brands fa-youtube"></i></span>
+            </div>
+
+            <!-- অ্যাপ ডাউনলোড বাটনসমূহ -->
+            <div class="footer_download_app mb-4">
+              <img src="https://sangbad.net/assets/image/xgoogle-play-download.png.pagespeed.ic.DXmbKRV_OE.webp"
+                alt="Google Play" style="height: 40px; margin: 0 5px; cursor: pointer;">
+              <img src="https://sangbad.net/assets/image/xapp-store-btn.png.pagespeed.ic.8m0H9gTLjL.webp"
+                alt="App Store" style="height: 40px; margin: 0 5px; cursor: pointer;">
+            </div>
+
+            <!-- সেকেন্ডারি মেনু (ইনলাইন পাইপ সেপারেটর সহ) -->
+            <ul class="secondary_menu_tt list-unstyled d-flex justify-content-center flex-wrap"
+              style="font-size: 15px; font-weight: 500;">
+              <li class="nav-item">About Us</li>
+              <li class="nav-item">Contact Us</li>
+              <li class="nav-item">Terms And Condition</li>
+              <li class="nav-item">Privacy Policy</li>
+              <li class="nav-item">Advertisement</li>
+              <li class="nav-item">Career</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ফুটার বটম: কপিরাইট সেকশন -->
+    <div class="footer_bottom py-3" style="background-color: #243e8b; color: #ffffff;">
+      <div class="container" style="max-width: 1246px;">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="tt_element_inner d-flex justify-content-center align-items-center flex-wrap gap-2"
+              style="font-size: 14px; letter-spacing: 0.5px;">
+              <div class="techtaranga_footer_cpt">
+                <b>২০২৬ সংবাদ কর্তৃক সর্বস্বত্ব স্বত্বাধিকার সংরক্ষিত</b>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-</footer>
+  </footer>
 
-<!-- Functional Back to Top Button -->
-<button id="techtaranga_backToTop"><i class="bi bi-chevron-up"></i></button>
+  <!-- Functional Back to Top Button -->
+  <button id="techtaranga_backToTop"><i class="bi bi-chevron-up"></i></button>
 
-<!-- Smooth Scroll Logic script -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var backToTopBtn = document.getElementById("techtaranga_backToTop");
+  <!-- Smooth Scroll Logic script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var backToTopBtn = document.getElementById("techtaranga_backToTop");
 
-    // Show button when user scrolls down 300px from the top
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 300) {
-        backToTopBtn.classList.add("show-btn");
-      } else {
-        backToTopBtn.classList.remove("show-btn");
-      }
-    });
+      // Show button when user scrolls down 300px from the top
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.add("show-btn");
+        } else {
+          backToTopBtn.classList.remove("show-btn");
+        }
+      });
 
-    // Scroll to top smoothly when clicked
-    backToTopBtn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+      // Scroll to top smoothly when clicked
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
       });
     });
-  });
-</script>
+  </script>
 </body>
+
 </html>

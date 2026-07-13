@@ -1,0 +1,394 @@
+/* ==========================================================================
+   DESKTOP DYNAMIC STICKY NAV REGULATION ENGINE (min-width: 992px)
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Base Hide State: Hide the logo completely on initial white main navbar view */
+  .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Scroll Trigger State: Triggers instantly on active position shifts */
+  .sb-navigation-row-wrapper.sticky,
+  .sb-navigation-row-wrapper.sticky-active,
+  .sb-navigation-row-wrapper[class*="sticky"] {
+    background-color: #2b3a80 !important; /* Royal Blue Background Match */
+    border-bottom: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    
+    /* ADD SPACING AT THE BOTTOM: Increases height slightly and pushes content clear */
+    height: 60px !important; 
+    padding-bottom: 6px !important; 
+  }
+
+  /* REVEAL THE LOGO PRECISELY DURING STICKY SCROLL RUNS */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 20px !important;
+    margin-right: 25px !important;
+    flex: 0 0 auto !important;
+    height: 100% !important;
+  }
+
+  /* REVEAL THE LOGO PRECISELY DURING STICKY SCROLL RUNS */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 20px !important;
+    margin-right: 25px !important;
+    margin-top: 6px !important; /* Pushes the image down slightly */
+    flex: 0 0 auto !important;
+    height: auto !important;
+  }
+
+  .sb-desktop-sticky-logo img {
+    height: 24px !important; /* Slightly scales down the image to match the proportions of image 2 */
+    width: auto !important;
+    display: block !important;
+  }
+
+  /* TEXT STYLE BASELINE COLOR TRANSITION TO WHITE OVER ROYAL BLUE */
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper[class*="sticky"] .tt_nav-menu .nav-item a,
+  .sb-navigation-row-wrapper.sticky .techtaranga_hmenuicon span i,
+  .sb-navigation-row-wrapper.sticky-active .techtaranga_hmenuicon span i {
+    color: #ffffff !important;
+  }
+
+  /* Transition the dropdown triangle accent to clean white as well */
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item.has-children > a::after,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item.has-children > a::after {
+    border-top-color: #ffffff !important;
+  }
+
+  .sb-navigation-row-wrapper.sticky .tt_nav-menu .nav-item a:hover,
+  .sb-navigation-row-wrapper.sticky-active .tt_nav-menu .nav-item a:hover {
+    color: #dbdbdb !important;
+  }
+
+  /* CLEAR ACTION LINKS AND PULL HAMBURGER LEFT */
+  .sb-navigation-row-wrapper.sticky .techtaranga_hmenuicon a,
+  .sb-navigation-row-wrapper.sticky-active .techtaranga_hmenuicon a,
+  .sb-navigation-row-wrapper[class*="sticky"] .techtaranga_hmenuicon a {
+    display: none !important;
+  }
+
+  .sb-navigation-row-wrapper.sticky .sb-action-utilities-panel,
+  .sb-navigation-row-wrapper.sticky-active .sb-action-utilities-panel,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-action-utilities-panel {
+    margin-right: 40px !important; /* Shifts your hamburger inward from edge boundaries */
+  }
+}
+/* ==========================================================================
+   DESKTOP DESIRED FIX: HIDE LOGO ON INITIAL STATIC NAV BAR
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Force hide the desktop logo completely by default on the white main navbar */
+  .sb-navigation-row-wrapper:not(.sticky):not(.sticky-active) .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Only allow the logo to appear when one of the active scroll classes is applied */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo {
+    display: block !important;
+  }
+}
+/* ==========================================================================
+   POSITION-BASED AUTO LOGO SWITCHER (NO JAVASCRIPT REQUIRED)
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Base State: Hide the logo when navbar is sitting normally in the header flow */
+  .sb-desktop-sticky-logo {
+    display: none !important;
+  }
+
+  /* 2. Scroll Trigger State: Detects when the element is fixed/sticky on the screen */
+  /* This forces the logo to display ONLY when the navbar actively latches onto top: 0 */
+  .sb-navigation-row-wrapper.sticky .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper.sticky-active .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[class*="sticky"] .sb-desktop-sticky-logo,
+  .sb-navigation-row-wrapper[style*="position: fixed"] .sb-desktop-sticky-logo {
+    display: block !important;
+  }
+}
+/* ==========================================================================
+   MOBILE PRESERVATION BLOCK
+   ========================================================================== */
+@media (max-width: 991px) {
+    .sb-desktop-sticky-logo {
+        display: none !important;
+    }
+}
+.sb-side-item {
+    text-decoration: none !important; /* Removes the underline */
+}
+
+.sb-side-item .sb-card-title {
+    color: #212529; /* Changes text color from link-blue to a dark charcoal/black */
+}
+
+/* Optional: Add a subtle hover effect to make it feel like a real premium news feed */
+.sb-side-item:hover .sb-card-title {
+    color: #273a96; /* Turns the text your primary blue brand color on hover */
+}
+/* কার্ডের মেইন কন্টেইনার */
+  .prothom-songbad-post-style {
+    transition: all 0.3s ease;
+  }
+  
+  /* ইমেজ কন্টেইনার এবং ইমেজ জুম ইফেক্ট */
+  .hover-img-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .hover-img-wrap img {
+    transition: transform 0.5s ease;
+  }
+
+  /* হোভার করার পর যা ঘটবে */
+  .prothom-songbad-post-style:hover .hover-img-wrap img {
+    transform: scale(1.06); /* ছবি হালকা বড় বা জুম হবে */
+  }
+  .prothom-songbad-post-style:hover .news-title-4 {
+    color: #273a96 !important; /* লেখার কালার পরিবর্তন হয়ে ব্র্যান্ড ব্লু হবে */
+  }
+
+  /* =======================================================
+   MOBILE TOPBAR TO NAVBAR FLUSH FIT (ONE LINE SPACE)
+   ======================================================= */
+@media (max-width: 767px) {
+  /* 1. Global Wrapper Padding Stripping */
+  header.sb-header-wrapper,
+  header.sb-header-wrapper .container-custom {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    height: auto !important;
+  }
+
+  /* 2. Tighten the Mobile Topbar Row & Add the Separation Line */
+  .sb-mobile-header-row {
+    margin-bottom: 0 !important;
+    padding-bottom: 8px !important; /* Balanced breathing room above the line */
+    height: auto !important;
+    border-bottom: 1px solid #e2e8f0 !important; /* The single structural line space */
+  }
+
+  /* Ensure the mobile logo image doesn't bring hidden baseline spaces */
+  .sb-mobile-header-logo img {
+    display: block !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* 3. Force Navbar Row to Snap Directly Underneath the Border Line */
+  #stickyNavbar.sb-navigation-row-wrapper {
+    margin-top: 10px !important; /* Sits perfectly flat against the line space border */
+    padding-top: 0 !important;
+    top: 0 !important;
+    height: auto !important; /* Overrides fixed heights holding ghost space */
+  }
+
+  .sb-navigation-row-container {
+    padding-top: 6px !important; /* Uniform spacing beneath the separating line */
+    margin-top: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  /* 4. Navigation Track Link Compression */
+  .sb-nav-scroller-track,
+  .sb-nav-scroller-track nav {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    height: auto !important;
+  }
+
+  /* Tightly compress individual nav item margins inside the swiper track */
+  .tt_nav-menu .nav-item {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .tt_nav-menu .nav-item a {
+    padding-top: 4px !important;  
+    padding-bottom: 4px !important; 
+    line-height: 1.2 !important;
+    display: inline-block !important;
+  }
+}
+
+/* =======================================================
+     SIDEBAR LOWER FEED ITEMS LIST EXTENSION ADJUSTMENTS
+     ======================================================= */
+  .sb-side-item {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 12px 0 !important; /* Balanced top and bottom padding for the list item */
+    margin: 0 !important;
+    border-bottom: 1px solid #edf2f7 !important; /* Soft gray dividing border line */
+    box-sizing: border-box !important;
+    float: none !important;
+  }
+
+  /* Clear out any trailing border on the final list element */
+  .sb-side-item:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Strict horizontal layout control for the inner row wrapper */
+  .sb-side-item .sb-card-flex {
+    display: flex !important;
+    flex-direction: row !important; /* Enforces absolute side-by-side row behavior */
+    align-items: center !important;  /* Centers thumbnail and title vertically */
+    justify-content: flex-start !important;
+    background: transparent !important; /* Sidebar lists keep a transparent backing flow */
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 14px !important; /* Uniform gap between image container and text */
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Image Thumbnail Wrapper Control */
+  .sb-side-item .sb-card-img-wrap {
+    width: 110px !important;   /* Fixed structural width matching image proportion */
+    height: 70px !important;   /* Fixed structural height matching image proportion */
+    max-width: 110px !important;
+    max-height: 70px !important;
+    flex-shrink: 0 !important; /* Blocks desktop styling from squishing the thumbnail */
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    display: block !important;
+  }
+
+  /* Smooth image scale within the container boundary */
+  .sb-side-item .sb-card-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Prevents compression distortions */
+    border-radius: 6px !important; /* Clean rounded edges */
+    display: block !important;
+  }
+
+  /* Text Wrapper Element Configuration */
+  .sb-side-item .sb-card-text,
+  .sb-side-item .sb-card-text-alt {
+    flex: 1 !important; /* Allows text block to stretch out and fill the remaining area */
+    min-width: 0 !important; /* Prevents long strings from breaking layout box bounds */
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: auto !important;
+  }
+
+  /* Core Card Title Text Formatting */
+  .sb-side-item .sb-card-title {
+    font-size: 15px !important; /* Clean legible headline font size */
+    line-height: 20px !important; /* Balanced line spacing for text clarity */
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: normal !important; /* Corrects multi-line text wrapping */
+    word-break: break-word !important; /* Prevents text elements falling off screen boundaries */
+    text-align: left !important;
+    display: block !important;
+  }
+
+  /* ==========================================
+   1. SCREEN STYLES (What users see on web)
+   ========================================== */
+.print-only-header {
+  display: none; /* Hidden completely on the website screen */
+}
+
+@media print {
+  /* 1. Force the main wrapper to act as a flexible layout grid on paper */
+  body, #printable-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* 2. Force the logo to jump to position #1 at the absolute top of the printout */
+  .sb-logo-box {
+    order: -1 !important; /* Forces it to the top */
+    margin: 0 auto 20px auto !important; /* Centers it nicely and adds space below */
+    display: block !important;
+    text-align: center;
+  }
+  
+  /* Optional: Center the Sangbad logo image itself if it's inside a div */
+  .sb-logo-box img {
+    max-height: 50px !important; /* Keeps it modern and sleek */
+    width: auto !important;
+  }
+}
+
+/* ==========================================
+   2. PRINT STYLES (What comes out of the printer)
+   ========================================== */
+@media print {
+  .print-only-header {
+    display: flex !important; /* Bring it to life on paper */
+    align-items: center;
+    justify-content: space-between; /* Pushes logo left, text right */
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 30px; /* Space between logo and content */
+    width: 100%;
+  }
+
+  /* Keep the logo crisp and modernly sized */
+  .print-logo {
+    height: 50px; /* Adjust to match your logo aspect ratio */
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Right-aligned text metadata next to the logo */
+  .print-meta {
+    text-align: right;
+  }
+  
+  .print-meta h2 {
+    margin: 0 0 5px 0 !important;
+    font-size: 16pt !important;
+    font-weight: 600;
+    color: #1a1a1a !important;
+  }
+
+  .print-meta p {
+    margin: 0 !important;
+    font-size: 10pt !important;
+    color: #666 !important;
+  }
+
+  /* Make sure standard layout elements hide as before */
+  nav, header, footer, .sidebar, .btn {
+    display: none !important;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.6cm; /* This removes the default browser headers/footers while keeping a clean paper edge margin */
+  }
+}
